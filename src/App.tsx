@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <div className="App_Actual">
+      <div className="App__Actual">
         <Routes>
           <Route path="/" element={<Home />}></Route>
         </Routes>

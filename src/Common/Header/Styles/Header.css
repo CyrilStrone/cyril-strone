@@ -1,0 +1,29 @@
+.Header {
+  width: 100%;
+  padding: 50px 0px;
+  transition: all 0.5s ease 0s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Header__Actual {
+  max-width: 1140px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+.Header__Actual__Menu{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+/* @media screen and (orientation: portrait) {
+  .Header__Actual {
+    max-width: 100%;
+  }
+  .Header {
+    padding: 0.5rem 1rem;
+  }
+} */

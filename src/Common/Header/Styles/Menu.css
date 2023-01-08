@@ -1,0 +1,40 @@
+.Menu{
+    display: flex;
+    align-items: center;
+    user-select:none;
+}
+.MenuItems a{
+    font-size: calc(var(--font-sm) + 0.9px);
+    cursor: pointer;
+    padding: 8px 15px !important;
+    color: var(--nav-link) !important;
+    transition: all 1s ease-out;
+}
+.MenuItems{
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0px);
+    box-shadow: rgb(0 0 0 / 0%) 0px 0px 1px;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 6px;
+
+}
+
+.MenuItems::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 1.5px;
+    background: var(--article-color);
+    height: 1px;
+    transition-property: left, right;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+.MenuItems:hover::before, .MenuItems:focus::before, .MenuItems:active::before {
+    left: 0px;
+    right: 0px;
+}

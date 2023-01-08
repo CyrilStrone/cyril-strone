@@ -1,0 +1,9 @@
+.Landuages {
+  padding: 8px !important;
+  padding-bottom: 12px !important;
+  font-size: calc(var(--font-sm) + 0.9px);
+  cursor: pointer;
+  color: var(--nav-link) !important;
+  transition: all 1s ease-out;
+  user-select:none;
+}
