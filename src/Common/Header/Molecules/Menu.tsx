@@ -6,13 +6,21 @@ export const Menu = () => {
       name:"About",
       href:"",
     },
+    // {
+    //   name:"Projects",
+    //   href:"",
+    // },
+    // {
+    //   name:"Contact",
+    //   href:"",
+    // },
     {
-      name:"Projects",
-      href:"",
+      name:"Components",
+      href:"Components",
     },
     {
-      name:"Contact",
-      href:"",
+      name:"Projects",
+      href:"Projects",
     }
   ];
   return (

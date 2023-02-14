@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../Styles/MenuItems.css";
 export interface IMenuItems {
   name: string;
@@ -6,7 +7,7 @@ export interface IMenuItems {
 export const MenuItems = (params:IMenuItems) => {
   return (
     <div className="MenuItems">
-      <a>{params.name}</a>
+      <Link className="MenuItems__Link" to={params.href !== "" ? params.href : "/"}>{params.name}</Link>
     </div>
   );
 };
