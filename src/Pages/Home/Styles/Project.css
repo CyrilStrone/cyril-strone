@@ -1,0 +1,50 @@
+.Project {
+  margin-top: 104px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.Project__Title {
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+.Project__Items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 38px;
+}
+.Project__Button {
+  height: 44px;
+  margin-top: 42px;
+  background: #323443;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 23px;
+  padding-right: 23px;
+  box-sizing: border-box;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #c9c9c9;
+  cursor: pointer;
+  text-decoration: none;
+}
+.Project__Button img {
+  height: 14px;
+  padding-right: 30px;
+  box-sizing: border-box;
+}

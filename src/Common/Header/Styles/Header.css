@@ -1,6 +1,6 @@
 .Header {
   width: 100%;
-  padding: 50px 0px;
+  height: 126px;
   transition: all 0.5s ease 0s;
   display: flex;
   align-items: center;
@@ -12,7 +12,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5rem 1rem;
+  height: 100%;
+  border-bottom: 1px solid #4D4D4D;
 }
 .Header__Actual__Menu{
   display: flex;

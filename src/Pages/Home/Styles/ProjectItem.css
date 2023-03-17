@@ -1,0 +1,94 @@
+.ProjectItem {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 66px;
+}
+.ProjectItem:last-child {
+  margin-bottom: 0px;
+}
+.ProjectItem__Preview {
+  min-width: 556px;
+  max-height: 282px;
+  background: linear-gradient(0deg, #323443, #323443), #eff6ff;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  flex-direction: column;
+  padding-left: 52px;
+  box-sizing: border-box;
+}
+.ProjectItem__Preview__Technology {
+  width: 100%;
+  display: flex;
+  margin-top: 77px;
+}
+.ProjectItem__Preview__Technology__Item {
+  width: 16px;
+  height: 16px;
+}
+.ProjectItem__Preview__Background {
+  width: 451px;
+  background-size: cover;
+  margin-top: 15px;
+}
+.ProjectItem__Preview__Button {
+}
+.ProjectItem__Preview__Background__Image {
+  box-sizing: border-box;
+  width: 36px;
+  height: 36px;
+  padding: 7.5px;
+  background: #3f4152;
+  border-radius: 9px;
+  position: absolute;
+  right: 9px;
+  top: 10px;
+}
+.ProjectItem__Info {
+  margin-left: 30px;
+}
+.ProjectItem__Info__Type {
+  margin-top: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 1px;
+  color: #dedede;
+}
+.ProjectItem__Info__Name {
+  margin-top: 22px;
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 1px;
+
+  color: #ffffff;
+}
+.ProjectItem__Info__Description {
+  margin-top: 28px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.014em;
+  color: #d5d5d5;
+}
+.ProjectItem__Preview__New{
+    top: 20px;
+    position: absolute;
+}

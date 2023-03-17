@@ -1,0 +1,50 @@
+.Card{
+    width: 262px;
+    height: 190px;
+    background: #323443;
+    border-radius: 12px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.Card__Images{
+    position: absolute;
+    top: -36px;
+    width: 72px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Card__Images__Circle{
+    position: absolute;
+}
+.Card__Images__Other{
+    position: absolute;
+}
+.Card__Title{
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+    margin-top: 58px;
+    color: #FAFAF9;
+}
+.Card__Description{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 12px;
+    color: rgba(239, 237, 232, 0.65);
+    max-width: 225px;
+    line-height: 22px;
+}

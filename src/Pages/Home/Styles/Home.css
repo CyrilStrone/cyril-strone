@@ -1,11 +1,17 @@
-.Home__Cat{
-    font-size: calc(var(--font-x-lg) + 9px);
-    font-weight: 900;
-    margin: 2rem 0rem 1.5rem;
-    position: relative;
-    letter-spacing: -1.1px;
-    padding-bottom: 100px;
+.Home__Title {
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 72px;
+  letter-spacing: 1px;
+  background: linear-gradient(134.01deg, #3bf686 40.75%, #4ca9ff 90.52%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-top: 94px;
 }
-.Home img{
-    max-width: 100vw;
+.Home{
+    padding-bottom: 150px;
 }

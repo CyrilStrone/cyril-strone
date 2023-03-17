@@ -3,31 +3,31 @@ import "../Styles/Menu.css";
 export const Menu = () => {
   const MenuArray: any = [
     {
-      name:"About",
+      name:"Home",
       href:"",
     },
-    // {
-    //   name:"Projects",
-    //   href:"",
-    // },
-    // {
-    //   name:"Contact",
-    //   href:"",
-    // },
     {
-      name:"Components",
-      href:"Components",
+      name:"Mentorship",
+      href:"Mentorship",
     },
     {
-      name:"Projects",
-      href:"Projects",
+      name:"Portfolio",
+      href:"Portfolio",
+    },
+    {
+      name:"Snippet",
+      href:"Snippet",
+    },
+    {
+      name:"Blog",
+      href:"Blog",
     }
   ];
   return (
-    <div className="Menu">
+    <>
       {MenuArray.map((e: any) => (
         <MenuItems name={e.name} href={e.href} />
       ))}
-    </div>
+    </>
   );
 };

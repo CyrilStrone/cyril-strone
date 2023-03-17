@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "../Styles/MenuItems.css";
 export interface IMenuItems {
   name: string;
@@ -6,8 +6,6 @@ export interface IMenuItems {
 }
 export const MenuItems = (params:IMenuItems) => {
   return (
-    <div className="MenuItems">
-      <Link className="MenuItems__Link" to={params.href !== "" ? params.href : "/"}>{params.name}</Link>
-    </div>
+      <NavLink className="MenuItems" to={params.href !== "" ? params.href : "/"}>{params.name}</NavLink>
   );
 };
