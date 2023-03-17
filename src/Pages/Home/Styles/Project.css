@@ -48,3 +48,6 @@
   padding-right: 30px;
   box-sizing: border-box;
 }
+@media screen and (orientation: portrait) {
+
+}

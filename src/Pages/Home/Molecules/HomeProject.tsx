@@ -15,7 +15,7 @@ export const Project = () => {
                 <ProjectItem type={"Web Development"} name={"CEPR"} description={"Serrow restructured and designed core pages, creating interactive elements that put users in control and allowed them to discover the information needed to make a decision."} technology={["React"]} link={"https://portal.coolantsatellite.com/presentation/"} preview={Cepr}/>
             </div>
             
-            <NavLink to={"/"} className="Project__Button">
+            <NavLink to={"/Snippet"} className="Project__Button">
                 <img src={More} alt="" />
                 See More
             </NavLink>

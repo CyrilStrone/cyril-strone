@@ -48,3 +48,47 @@
     max-width: 225px;
     line-height: 22px;
 }
+@media screen and (orientation: portrait) {
+    .Card{
+        flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 12px;
+    height: 229px;
+    width: 100%;
+    text-align: left;
+
+    }
+    .Card__Images{
+        width: 46px;
+height: 46px;
+top: -23px;
+padding: 13px;
+    }
+    .Card__Images__Circle{
+        width: 46px;
+height: 46px;
+    }
+    .Card__Images__Other{
+        width: 18px;
+        height: 18px;
+    }
+    .Card__Title{
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        letter-spacing: 0.5px;
+        margin-top: 37px;
+        text-align: center;
+        justify-content: center;
+        width: 90%;
+        min-height: 36px;
+    }
+    .Card__Description{
+        width: 90%;
+        text-align: left;
+        font-size: 12px;
+        text-align: left;
+        letter-spacing: 0.3px;
+        line-height: 20px;
+        margin-top: 15px;
+    }
+}

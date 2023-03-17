@@ -20,11 +20,8 @@
   align-items: center;
   justify-content: flex-end;
 }
-/* @media screen and (orientation: portrait) {
-  .Header__Actual {
-    max-width: 100%;
-  }
+@media screen and (orientation: portrait) {
   .Header {
-    padding: 0.5rem 1rem;
+    display: none;
   }
-} */
+}

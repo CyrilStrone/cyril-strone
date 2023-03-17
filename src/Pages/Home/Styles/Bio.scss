@@ -9,29 +9,22 @@
 }
 .Bio__Avatar {
   position: relative;
-  height: 100%;
+  height: 155px;
   width: 155px;
   background: #3a3636;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  $border: 4px;
-  &:before {
-    content: "";
-    position: absolute;
-    top: -2px;
-    bottom: -2px;
-    left: -2px;
-    right: -2px;
-    background: linear-gradient(134.01deg, #3bf686 40.75%, #4ca9ff 90.52%);
-    border-radius: 50%;
-    margin: -$border;
-    z-index: -1;
-  }
+}
+.Bio__Avatar__Circle {
+  position: absolute !important;
+  height: 155px !important;
+  width: 155px !important;
 }
 .Bio__Avatar img {
   width: 134px;
+  z-index: 1;
 }
 .Bio__Biography {
   margin-left: 35px;
@@ -69,32 +62,99 @@
   margin-left: 85px;
 }
 .Bio__Connect__Title {
-    font-family: "Sora";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 28px;
-    letter-spacing: 1px;
-    color: #fbfbfb;
-    height: 72px;
-    display: flex;
-    align-items: center;
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  letter-spacing: 1px;
+  color: #fbfbfb;
+  height: 72px;
+  display: flex;
+  align-items: center;
 }
-.Bio__Connect__Icons{
-    display: flex;
-    align-items: flex-start;
+.Bio__Connect__Icons {
+  display: flex;
+  align-items: flex-start;
 }
 .Bio__Connect__Icons a {
-    margin-right: 17px;
-    text-decoration: none;
-    width: 32px;
-    height: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  margin-right: 17px;
+  text-decoration: none;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .Bio__Connect__Icons a:last-child {
-    margin-right: 0px;
+  margin-right: 0px;
 }
 .Bio__Connect__Icons img {
   height: 100%x;
+}
+.Bio__Title {
+  display: none;
+}
+@media screen and (orientation: portrait) {
+  .Bio__Title {
+    display: block;
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 36px;
+    margin-top: 38px;
+    text-align: center;
+    letter-spacing: 1px;
+    max-width: 280px;
+    background: linear-gradient(134.01deg, #3bf686 40.75%, #4ca9ff 90.52%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  .Bio {
+    margin-top: 37px;
+    flex-direction: column;
+    height: 100%;
+  }
+  .Bio__Avatar {
+    width: 120px;
+    height: 120px;
+  }
+  .Bio__Avatar__Circle {
+    width: 120px;
+    height: 120px;
+  }
+  .Bio__Avatar img {
+    width: 120px;
+    height: 120px;
+  }
+  .Bio__Biography {
+    margin-left: 0;
+    align-items: center;
+    margin-top: 22px;
+    max-width: 280px;
+  }
+  .Bio__Biography__Title {
+    font-size: 20px;
+  }
+  .Bio__Biography__Description {
+    font-size: 14px;
+  }
+  .Bio__Connect {
+    margin-left: 0;
+    margin-top: 35px;
+  }
+  .Bio__Connect__Title {
+    display: none;
+  }
+  .Bio__Connect__Icons {
+  }
+  .Bio__Connect__Icons a {
+  }
+  .Bio__Connect__Icons a:last-child {
+  }
+  .Bio__Connect__Icons img {
+    height: 100%x;
+  }
 }

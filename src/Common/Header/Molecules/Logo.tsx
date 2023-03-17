@@ -1,9 +1,9 @@
 import "../Styles/Logo.css";
-import PicturesLogo from '../../../Pictures/Header/Logo.svg'
+import { NavLink } from "react-router-dom";
 export const Logo = () => {
   return (
-    <div className="Logo">
+    <NavLink to={"/"} className="Logo">
       Cyril Strone
-    </div>
+    </NavLink>
   );
 };

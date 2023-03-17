@@ -92,3 +92,6 @@
     top: 20px;
     position: absolute;
 }
+@media screen and (orientation: portrait) {
+
+}

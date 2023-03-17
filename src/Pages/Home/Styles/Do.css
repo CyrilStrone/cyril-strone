@@ -1,47 +1,76 @@
-.Do{
-    margin-top: 81px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
+.Do {
+  margin-top: 81px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
-.Do__Description{
-    display: flex;
+.Do__Description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.Do__Description__Title {
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 72px;
+  /* identical to box height, or 257% */
+
+  letter-spacing: 1px;
+
+  color: #ffffff;
+}
+.Do__Description__Text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  /* or 178% */
+
+  letter-spacing: 0.014em;
+
+  color: #edcece;
+  max-width: 460px;
+}
+.Do__Cards {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.Do__Cards .Card {
+  margin-left: 30px;
+}
+@media screen and (orientation: portrait) {
+  .Do {
+    margin-top: 14px;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-.Do__Description__Title{
-    font-family: 'Sora';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 72px;
-    /* identical to box height, or 257% */
-    
+    align-items: center;
+    max-width: 280px;
+  }
+  .Do__Description {
+  }
+  .Do__Description__Title {
+    font-size: 20px;
+    line-height: 30px;
     letter-spacing: 1px;
-    
-    color: #FFFFFF;
-}
-.Do__Description__Text{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 32px;
-    /* or 178% */
-    
-    letter-spacing: 0.014em;
-    
-    color: #EDCECE;
-    max-width: 460px;
-}
-.Do__Cards{
+  }
+  .Do__Description__Text {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.006em;
+  }
+  .Do__Cards {
+    margin-top: 50px;
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-.Do__Cards .Card{
-   margin-left: 30px;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .Do__Cards .Card {
+    margin-left: 0;
+  }
 }

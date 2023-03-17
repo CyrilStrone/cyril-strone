@@ -1,0 +1,50 @@
+.Footer {
+  display: none;
+}
+@media screen and (orientation: portrait) {
+  .Footer {
+    display: flex;
+    height: 76px;
+    width: 100%;
+    background: #232323;
+    position: fixed;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .Footer__Item {
+    cursor: pointer;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis:  20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    text-decoration: none;
+    opacity:0.4;
+  }
+  .Footer__Item__Img {
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+  }
+  .Footer__Item__Title {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+  
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.006em;
+    color: #fbfbfb;
+    text-decoration: none;
+  }
+}

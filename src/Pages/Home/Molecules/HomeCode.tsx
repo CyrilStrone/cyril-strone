@@ -16,7 +16,7 @@ export const Code = () => {
                 <CodeItems name={"Nextjs Starter"} description={"A dead simple for nextjs project."} technology={["React"]} link={"/"} stars={8} />
             </div>
 
-            <NavLink to={"/"} className="Project__Button">
+            <NavLink to={"/Portfolio"} className="Project__Button">
                 <img src={More} alt="" />
                 See More
             </NavLink>
