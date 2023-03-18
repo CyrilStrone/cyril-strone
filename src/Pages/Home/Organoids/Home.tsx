@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { setScreenSizeEvent } from "../../../Common/Size/Size";
 import { Bio } from "../Molecules/HomeBio";
 import { Code } from "../Molecules/HomeCode";
 import { Do } from "../Molecules/HomeDo";
@@ -17,7 +18,9 @@ export const Home = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-
+  useEffect(()=>{
+    setScreenSizeEvent(screenSize)
+  },[screenSize])
   return (
     <div className="Home">
       {screenSize.width > screenSize.height ?
@@ -27,7 +30,7 @@ export const Home = () => {
           </div>
           <Bio screenSize={screenSize} />
           <Do />
-          <Project />
+          <Project/>
           <Code /></> :
         <>
           <Bio screenSize={screenSize} />

@@ -42,7 +42,16 @@
   font-size: 28px;
   letter-spacing: 1px;
   color: #fbfbfb;
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 72px;
+  /* identical to box height, or 257% */
+
+  letter-spacing: 1px;
   height: 72px;
+  color: #fbfbfb;
 }
 .Bio__Biography__Description {
   font-family: "Inter";
@@ -137,9 +146,16 @@
   }
   .Bio__Biography__Title {
     font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 1px;
+
+    height: auto;
   }
   .Bio__Biography__Description {
     font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.006em;
+    margin-top: 12px;
   }
   .Bio__Connect {
     margin-left: 0;

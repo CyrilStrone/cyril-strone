@@ -1,0 +1,52 @@
+.Portfolio {
+  margin-top: 72px;
+}
+.Portfolio__Header__Image {
+  width: 166.82px;
+  height: 166.82px;
+}
+.Portfolio__Header__Title {
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  /* or 129% */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 1px;
+  max-width: 458px;
+  color: #ffffff;
+}
+.Portfolio__Header__Image {
+}
+.Portfolio__Header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+.Portfolio__List {
+  margin-top: 30px;
+}
+@media screen and (orientation: portrait) {
+  .Portfolio {
+    margin-top: 28px;
+  }
+  .Portfolio__Header__Title {
+    font-size: 24px;
+    height: 83px;
+    letter-spacing: 1px;
+  }
+  .Portfolio__Header__Image {
+    display: none;
+  }
+  .Portfolio__Header {
+    justify-content: center;
+    padding-top: 15px;
+    border-bottom: 1px solid #4d4d4d;
+  }
+  .Portfolio__List {
+    margin-top: 42px;
+  }
+}

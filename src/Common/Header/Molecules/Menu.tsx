@@ -7,10 +7,6 @@ export const Menu = () => {
       href:"",
     },
     {
-      name:"Mentorship",
-      href:"Mentorship",
-    },
-    {
       name:"Portfolio",
       href:"Portfolio",
     },

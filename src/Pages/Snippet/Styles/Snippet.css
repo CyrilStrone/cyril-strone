@@ -1,0 +1,122 @@
+.Snippet {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 78px;
+}
+.Snippet__Title {
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+.Snippet__SearchBar {
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 45px;
+}
+.Snippet__SearchBar__Title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+.Snippet__SearchBar__InputBar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.Snippet__SearchBar__InputBar input {
+  width: 100%;
+  background: #3f4152;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 36px;
+  padding-right: 66px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.014em;
+  color: #9c9c9c;
+}
+.Snippet__SearchBar__Icon {
+  position: absolute;
+  right: 30px;
+}
+.Snippet__Items {
+  margin-top: 28px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+}
+@media screen and (orientation: portrait) {
+  .Snippet {
+    margin-top: 28px;
+  }
+  .Snippet__Title {
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    /* or 125% */
+    height: 83px;
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+    width: 100%;
+    border-bottom: 1px solid #4d4d4d;
+
+    color: #ffffff;
+  }
+  .Snippet__SearchBar {
+    margin-top: 26px;
+  }
+  .Snippet__SearchBar__Title {
+    display: none;
+  }
+  .Snippet__SearchBar__InputBar {
+    margin-top: 0;
+  }
+  .Snippet__SearchBar__InputBar input {
+    height: 42px;
+    background: #3f4152;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.006em;
+  }
+  .Snippet__SearchBar__Icon {
+    width: 13.5px;
+    height: 13.5px;
+    right: 15px;
+  }
+  .Snippet__Items {
+  }
+}

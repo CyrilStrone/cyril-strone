@@ -15,22 +15,22 @@ export const Footer = () => {
           Home
         </div>
       </NavLink>
-      <NavLink to={"/Mentorship"} style={() => ({ opacity: "/Mentorship" === location.pathname ? "1" : "0.4" })} className="Footer__Item">
+      <NavLink to={"/Portfolio"} style={() => ({ opacity: "/Portfolio" === location.pathname ? "1" : "0.4" })} className="Footer__Item">
         <img className="Footer__Item__Img" src={Mentorship} alt="" />
         <div className="Footer__Item__Title">
-          Mentorship
+        Portfolio
         </div>
       </NavLink>
-      <NavLink to={"/Portfolio"} style={() => ({ opacity: "/Portfolio" === location.pathname ? "1" : "0.4" })} className="Footer__Item">
+      <NavLink to={"/Snippet"} style={() => ({ opacity: "/Snippet" === location.pathname ? "1" : "0.4" })} className="Footer__Item">
         <img className="Footer__Item__Img" src={Portofolio} alt="" />
         <div className="Footer__Item__Title">
-          Portofolio
+        Snippet
         </div>
       </NavLink>
-      <NavLink to={"/More"} style={() => ({ opacity: "/More" === location.pathname ? "1" : "0.4" })} className="Footer__Item">
+      <NavLink to={"/Blog"} style={() => ({ opacity: "/Blog" === location.pathname ? "1" : "0.4" })} className="Footer__Item">
         <img className="Footer__Item__Img" src={More} alt="" />
         <div className="Footer__Item__Title">
-          More
+          Blog
         </div>
       </NavLink>
     </div>

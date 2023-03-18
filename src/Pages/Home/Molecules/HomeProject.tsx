@@ -4,15 +4,21 @@ import More from "../../../Common/Icons/More.svg"
 import Cepr from "../../../Common/Projects/Cepr.png"
 import { ProjectItem } from "../Atoms/ProjectItem";
 import { NavLink } from "react-router-dom";
+import { useStore } from "effector-react";
+import { $ProjectItemsOriginal } from "../../../Common/Lists/ProjectItemsOriginal";
+
 export const Project = () => {
+    const CodeItemsOriginal = useStore($ProjectItemsOriginal);
+
     return (
         <div className="Project">
             <div className="Project__Title">
                 Featured Project
             </div>
             <div className="Project__Items">
-                <ProjectItem new={true} type={"Web Development"} name={"CEPR"} description={"Serrow restructured and designed core pages, creating interactive elements that put users in control and allowed them to discover the information needed to make a decision."} technology={["React"]} link={"https://portal.coolantsatellite.com/presentation/"} preview={Cepr}/>
-                <ProjectItem type={"Web Development"} name={"CEPR"} description={"Serrow restructured and designed core pages, creating interactive elements that put users in control and allowed them to discover the information needed to make a decision."} technology={["React"]} link={"https://portal.coolantsatellite.com/presentation/"} preview={Cepr}/>
+                {CodeItemsOriginal.map((e:any)=>
+                     <ProjectItem new={e.new} type={e.type} name={e.name} description={e.description} technology={e.technology} link={e.link} preview={e.preview} />
+                )}
             </div>
             
             <NavLink to={"/Snippet"} className="Project__Button">
