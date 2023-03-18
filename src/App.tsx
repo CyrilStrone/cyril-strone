@@ -23,6 +23,8 @@ import { useStore } from 'effector-react';
 import Cepr from "./Common/Projects/Cepr.png"
 import OV from "./Common/Projects/OV.png"
 import BR from "./Common/Projects/BR.png"
+import SRMZHKH from './Common/Projects/SRMZHKH.png'
+import CeprDash from './Common/Projects/CeprDash.png'
 
 import BlogOne from "./Common/Blog/1.jpg"
 
@@ -51,7 +53,7 @@ i18n
           "Project__Title": "Featured Project",
           "Project__Button": "See More",
           "Code__Title": "Code Snippet",
-          "Portfolio__Header__Title": "Project that i has been done.",
+          "Portfolio__Header__Title": "Projects in which I participated.",
           "Snippet__Title": "Code Snippet",
           "Snippet__SearchBar__Title": "Search code snippet",
           "Snippet__SearchBar__InputBar": "Type your favorite snippet here, hehehe .....",
@@ -74,8 +76,8 @@ i18n
           "CodeItemsOriginal__Five__name": "My first Website",
           "CodeItemsOriginal__Five__description": "My first pure js and html project.",
 
-          "ProjectItemsOriginal__One__name": "CEPR",
-          "ProjectItemsOriginal__One__description": "Presentation for CEPR clients. 3D models, many libraries and offline version.",
+          "ProjectItemsOriginal__One__name": "Presentation",
+          "ProjectItemsOriginal__One__description": "Presentation for the company's clients. 3D models, many libraries and offline version.",
           "ProjectItemsOriginal__One__type": "Web Development",
 
           "ProjectItemsOriginal__Two__name": "OV",
@@ -86,10 +88,18 @@ i18n
           "ProjectItemsOriginal__Three__description": "Social network for lightning-fast search and establishment of business contacts.",
           "ProjectItemsOriginal__Three__type": "Web Development(in work)",
 
-          "BlogItemsOriginal__One__title":"Cat Barsik",
-          "BlogItemsOriginal__One__description":"My cat Barsik",
-          "BlogItemsOriginal__One__text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales eros sit amet diam euismod, ut dapibus sem sagittis. Nam in velit diam. Nunc porttitor lectus vitae arcu vestibulum consequat. Nam accumsan metus ut ipsum consectetur, a luctus velit ultrices. Nulla eu vulputate augue, id convallis elit. Ut neque arcu, accumsan et leo a, faucibus aliquet diam. Quisque iaculis orci sed accumsan egestas.Nunc nibh orci, rutrum quis finibus et, porta eu est. Sed ligula neque, congue a vestibulum tempus, rhoncus ut metus. Morbi dapibus neque nec justo placerat, sodales vestibulum justo tempus. Mauris ac condimentum augue. Nullam facilisis tincidunt massa vel convallis. Morbi laoreet massa ac sapien rhoncus, vitae iaculis felis luctus. Vivamus ultrices, orci sed feugiat feugiat, quam lectus vulputate nulla, at egestas turpis mauris nec urna. Pellentesque semper neque id viverra accumsan. Phasellus congue tempus sodales. Morbi a accumsan elit. Phasellus sit amet tempus dolor, eu tempus nisi. Donec augue felis, pretium ut cursus non, porta sed lacus. Sed rhoncus dolor et rhoncus elementum. Sed tempor urna arcu, ac aliquam libero pharetra ut. Cras ornare, dolor eu tincidunt efficitur, orci nulla pharetra diam, id porttitor lorem magna nec neque. Fusce orci ligula, viverra id lorem in, commodo ornare magna.",
-        
+          "ProjectItemsOriginal__Four__name": "CRM System",
+          "ProjectItemsOriginal__Four__description": "A system that helps to control all channels of communication with residents of housing and communal services companies.",
+          "ProjectItemsOriginal__Four__type": "Web Development",
+
+          "ProjectItemsOriginal__Five__name": "Industrial Dashboard",
+          "ProjectItemsOriginal__Five__description": "A site that shows the user detailed statistics and equipment information in real time.",
+          "ProjectItemsOriginal__Five__type": "Web Development",
+
+          "BlogItemsOriginal__One__title": "Cat Barsik",
+          "BlogItemsOriginal__One__description": "My cat Barsik",
+          "BlogItemsOriginal__One__text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales eros sit amet diam euismod, ut dapibus sem sagittis. Nam in velit diam. Nunc porttitor lectus vitae arcu vestibulum consequat. Nam accumsan metus ut ipsum consectetur, a luctus velit ultrices. Nulla eu vulputate augue, id convallis elit. Ut neque arcu, accumsan et leo a, faucibus aliquet diam. Quisque iaculis orci sed accumsan egestas.Nunc nibh orci, rutrum quis finibus et, porta eu est. Sed ligula neque, congue a vestibulum tempus, rhoncus ut metus. Morbi dapibus neque nec justo placerat, sodales vestibulum justo tempus. Mauris ac condimentum augue. Nullam facilisis tincidunt massa vel convallis. Morbi laoreet massa ac sapien rhoncus, vitae iaculis felis luctus. Vivamus ultrices, orci sed feugiat feugiat, quam lectus vulputate nulla, at egestas turpis mauris nec urna. Pellentesque semper neque id viverra accumsan. Phasellus congue tempus sodales. Morbi a accumsan elit. Phasellus sit amet tempus dolor, eu tempus nisi. Donec augue felis, pretium ut cursus non, porta sed lacus. Sed rhoncus dolor et rhoncus elementum. Sed tempor urna arcu, ac aliquam libero pharetra ut. Cras ornare, dolor eu tincidunt efficitur, orci nulla pharetra diam, id porttitor lorem magna nec neque. Fusce orci ligula, viverra id lorem in, commodo ornare magna.",
+
         }
       },
       ru: {
@@ -112,7 +122,7 @@ i18n
           "Project__Title": "Избранные проекты",
           "Project__Button": "Посмотреть больше",
           "Code__Title": "Мой код",
-          "Portfolio__Header__Title": "Проекты, которые сделал я.",
+          "Portfolio__Header__Title": "Проекты, в которых я учавствовал.",
           "Snippet__Title": "Мой код",
           "Snippet__SearchBar__Title": "Поиск code snippet",
           "Snippet__SearchBar__InputBar": "Введите ваш любимый code snippet, хехехе .....",
@@ -135,8 +145,8 @@ i18n
           "CodeItemsOriginal__Five__name": "Мой первый сайт",
           "CodeItemsOriginal__Five__description": "Мой первый проект на чистом js и html.",
 
-          "ProjectItemsOriginal__One__name": "ЦЭПР",
-          "ProjectItemsOriginal__One__description": "Презентация для клиентов CEPR. 3D-модели, множество библиотек и офлайн-версия.",
+          "ProjectItemsOriginal__One__name": "Презентация",
+          "ProjectItemsOriginal__One__description": "Презентация для клиентов компании. 3D-модели, множество библиотек и офлайн-версия.",
           "ProjectItemsOriginal__One__type": "Web Разработка",
 
           "ProjectItemsOriginal__Two__name": "OV",
@@ -147,14 +157,22 @@ i18n
           "ProjectItemsOriginal__Three__description": "Социальная сеть для молниеносного поиска и установления деловых контактов.",
           "ProjectItemsOriginal__Three__type": "Web Разработка(В работе)",
 
-          "BlogItemsOriginal__One__title":"Кот Барсик",
-          "BlogItemsOriginal__One__description":"Мой кот барсик",
-          "BlogItemsOriginal__One__text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales eros sit amet diam euismod, ut dapibus sem sagittis. Nam in velit diam. Nunc porttitor lectus vitae arcu vestibulum consequat. Nam accumsan metus ut ipsum consectetur, a luctus velit ultrices. Nulla eu vulputate augue, id convallis elit. Ut neque arcu, accumsan et leo a, faucibus aliquet diam. Quisque iaculis orci sed accumsan egestas.Nunc nibh orci, rutrum quis finibus et, porta eu est. Sed ligula neque, congue a vestibulum tempus, rhoncus ut metus. Morbi dapibus neque nec justo placerat, sodales vestibulum justo tempus. Mauris ac condimentum augue. Nullam facilisis tincidunt massa vel convallis. Morbi laoreet massa ac sapien rhoncus, vitae iaculis felis luctus. Vivamus ultrices, orci sed feugiat feugiat, quam lectus vulputate nulla, at egestas turpis mauris nec urna. Pellentesque semper neque id viverra accumsan. Phasellus congue tempus sodales. Morbi a accumsan elit. Phasellus sit amet tempus dolor, eu tempus nisi. Donec augue felis, pretium ut cursus non, porta sed lacus. Sed rhoncus dolor et rhoncus elementum. Sed tempor urna arcu, ac aliquam libero pharetra ut. Cras ornare, dolor eu tincidunt efficitur, orci nulla pharetra diam, id porttitor lorem magna nec neque. Fusce orci ligula, viverra id lorem in, commodo ornare magna.",
+          "ProjectItemsOriginal__Four__name": "CRM Система ЖКХ",
+          "ProjectItemsOriginal__Four__description": "Система, помогающая контролировать все каналы коммуникаций с жильцами домов ЖКХ компаний.",
+          "ProjectItemsOriginal__Four__type": "Web Разработка",
+
+          "ProjectItemsOriginal__Five__name": "Промышленный Дашборд",
+          "ProjectItemsOriginal__Five__description": "Сайт, который показывает пользователю статистику и информацию оборудования в реальном времени.",
+          "ProjectItemsOriginal__Five__type": "Web Разработка",
+
+          "BlogItemsOriginal__One__title": "Кот Барсик",
+          "BlogItemsOriginal__One__description": "Мой кот барсик",
+          "BlogItemsOriginal__One__text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales eros sit amet diam euismod, ut dapibus sem sagittis. Nam in velit diam. Nunc porttitor lectus vitae arcu vestibulum consequat. Nam accumsan metus ut ipsum consectetur, a luctus velit ultrices. Nulla eu vulputate augue, id convallis elit. Ut neque arcu, accumsan et leo a, faucibus aliquet diam. Quisque iaculis orci sed accumsan egestas.Nunc nibh orci, rutrum quis finibus et, porta eu est. Sed ligula neque, congue a vestibulum tempus, rhoncus ut metus. Morbi dapibus neque nec justo placerat, sodales vestibulum justo tempus. Mauris ac condimentum augue. Nullam facilisis tincidunt massa vel convallis. Morbi laoreet massa ac sapien rhoncus, vitae iaculis felis luctus. Vivamus ultrices, orci sed feugiat feugiat, quam lectus vulputate nulla, at egestas turpis mauris nec urna. Pellentesque semper neque id viverra accumsan. Phasellus congue tempus sodales. Morbi a accumsan elit. Phasellus sit amet tempus dolor, eu tempus nisi. Donec augue felis, pretium ut cursus non, porta sed lacus. Sed rhoncus dolor et rhoncus elementum. Sed tempor urna arcu, ac aliquam libero pharetra ut. Cras ornare, dolor eu tincidunt efficitur, orci nulla pharetra diam, id porttitor lorem magna nec neque. Fusce orci ligula, viverra id lorem in, commodo ornare magna.",
         }
       }
     },
-    lng: "en",
-    fallbackLng: "en",
+    lng: "ru",
+    fallbackLng: "ru",
 
     interpolation: {
       escapeValue: false
@@ -166,24 +184,21 @@ function App() {
   const choiseLang = useStore($choiseLang);
   const { i18n } = useTranslation()
   useEffect(() => {
-    i18n.changeLanguage(choiseLang ? ("en") : ("ru"))
-    if (localStorage.getItem("language") === undefined) {
-      localStorage.setItem("language", "ru");
-      i18n.changeLanguage(choiseLang ? ("en") : ("ru"))
+    if (localStorage.getItem("language") == undefined) {      
+      setchoiseLang("ru")
     } else {
-      i18n.changeLanguage(localStorage.getItem("language")?.toString());
-      setchoiseLang(localStorage.getItem("language")?.toString() == "ru" ? false : true)
+      setchoiseLang(localStorage.getItem("language")?.toString() == "ru" ? "ru" : "en")
     }
-
   }, [i18n])
 
   useEffect(() => {
-    if (choiseLang) {
-      localStorage.setItem("language", "en");
-    } else {
-      localStorage.setItem("language", "ru");
+    if (choiseLang !== "") {
+      i18n.changeLanguage(choiseLang)
+      localStorage.setItem("language", choiseLang);
     }
   }, [choiseLang])
+
+
 
   useEffect(() => {
     const handleResize = () => {
@@ -252,10 +267,29 @@ function App() {
         name: t('ProjectItemsOriginal__One__name'),
         description: t('ProjectItemsOriginal__One__description'),
         technology: ["React", "TypeScript", "ThreeJS"],
-        link: "https://portal.coolantsatellite.com/presentation/",
+        link: "",
         type: t('ProjectItemsOriginal__One__type'),
         preview: Cepr
       },
+      {
+        new: false,
+        name: t('ProjectItemsOriginal__Four__name'),
+        description: t('ProjectItemsOriginal__Four__description'),
+        technology: ["React", "TypeScript"],
+        link: "",
+        type: t('ProjectItemsOriginal__Four__type'),
+        preview: SRMZHKH
+      },
+      {
+        new: false,
+        name: t('ProjectItemsOriginal__Five__name'),
+        description: t('ProjectItemsOriginal__Five__description'),
+        technology: ["React", "TypeScript"],
+        link: "",
+        type: t('ProjectItemsOriginal__Five__type'),
+        preview: CeprDash
+      },
+
       {
         new: false,
         name: t('ProjectItemsOriginal__Two__name'),
@@ -275,13 +309,13 @@ function App() {
         preview: BR
       }
     ])
-    
+
   }, [choiseLang, t])
 
   return (
     <div className="App">
-      <div className="App__Languages" onClick={() => setchoiseLang(!choiseLang)}>
-        {choiseLang ? ("en") : ("ru")}
+      <div className="App__Languages" onClick={() => choiseLang !== "" && setchoiseLang(choiseLang == "ru" ? "en" : "ru")}>
+        {choiseLang == "en" ? ("en") : ("ru")}
       </div>
       <Header />
       <div className="App__Actual">

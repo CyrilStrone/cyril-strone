@@ -46,9 +46,10 @@ export const ProjectItem = (params: IProjectItem) => {
                             )}
                         </div>
                         <img className="ProjectItem__Preview__Background" src={params.preview} alt="" />
-                        <a target="_blank" href={params.link} className="ProjectItem__Preview__Button">
+                        {params.link && <a target="_blank" href={params.link} className="ProjectItem__Preview__Button">
                             <img className="ProjectItem__Preview__Background__Image" src={Link} alt="" />
-                        </a>
+                        </a>}
+                        
                     </div>
                     <div className="ProjectItem__Info">
                         <div className="ProjectItem__Info__Type">
