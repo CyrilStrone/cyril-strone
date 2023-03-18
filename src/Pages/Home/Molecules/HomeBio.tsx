@@ -9,7 +9,6 @@ import "../Styles/Bio.scss"
 import { $screenSizeEvent } from "../../../Common/Size/Size";
 import { useStore } from "effector-react";
 import { useTranslation } from "react-i18next";
-import Typewriter from "react-ts-typewriter";
 
 export const Bio = () => {
     const screenSizeEvent = useStore($screenSizeEvent);
@@ -66,14 +65,14 @@ export const Bio = () => {
                         </div>
                     </div>
                     <div className="Bio__Title">
-                        <Typewriter text={t('Home__Title') || ""} />
+                        {t('Home__Title')}
                     </div>
                     <div className="Bio__Biography ">
                         <div className="Bio__Biography__Title ">
                             {t('Bio__Biography__Title')}
                         </div>
                         <div className="Bio__Biography__Description">
-                            {t('Bio__Biography__Description')}                        
+                            {t('Bio__Biography__Description')}
                         </div>
                     </div>
                 </>
