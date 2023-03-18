@@ -1,6 +1,14 @@
 
 import "../Styles/ProjectItem.css"
 import React from "../../../Common/Icons/React.svg"
+import TypeScript from "../../../Common/Icons/TypeScript.svg"
+import JavaScript from "../../../Common/Icons/JavaScript.svg"
+import HTML from "../../../Common/Icons/HTML.svg"
+import CSS from "../../../Common/Icons/CSS.svg"
+import SASS from "../../../Common/Icons/SASS.svg"
+import ThreeJS from "../../../Common/Icons/ThreeJS.svg"
+import Webpack from "../../../Common/Icons/Webpack.svg"
+
 import Link from "../../../Common/Icons/Link.svg"
 import New from "../../../Common/Icons/New.svg"
 import { useStore } from "effector-react";
@@ -24,8 +32,17 @@ export const ProjectItem = (params: IProjectItem) => {
                     <div className="ProjectItem__Preview">
                         {params.new && <img className="ProjectItem__Preview__New" src={New} />}
                         <div className="ProjectItem__Preview__Technology">
-                            {params.technology.map((e: any) =>
-                                <img className="ProjectItem__Preview__Technology__Item" src={e == "React" ? React : ""} alt="Technology" />
+                            {params.technology.map((e: any, id: any) =>
+                                <img key={id} className="ProjectItem__Preview__Technology__Item"
+                                    src={e == "React" ?
+                                        React : e == "TypeScript" ?
+                                            TypeScript : e == "JavaScript" ?
+                                                JavaScript : e == "HTML" ?
+                                                    HTML : e == "CSS" ?
+                                                        CSS : e == "SASS" ?
+                                                            SASS : e == "ThreeJS" ?
+                                                                ThreeJS : e == "Webpack" ?
+                                                                    Webpack : ""} alt="Technology" />
                             )}
                         </div>
                         <img className="ProjectItem__Preview__Background" src={params.preview} alt="" />
@@ -58,8 +75,17 @@ export const ProjectItem = (params: IProjectItem) => {
                     <div className="ProjectItem__Preview">
                         {params.new && <img className="ProjectItem__Preview__New" src={New} />}
                         <div className="ProjectItem__Preview__Technology">
-                            {params.technology.map((e: any) =>
-                                <img className="ProjectItem__Preview__Technology__Item" src={e == "React" ? React : ""} alt="Technology" />
+                            {params.technology.map((e: any, id: any) =>
+                                <img key={id} className="ProjectItem__Preview__Technology__Item" 
+                                src={e == "React" ?
+                                        React : e == "TypeScript" ?
+                                            TypeScript : e == "JavaScript" ?
+                                                JavaScript : e == "HTML" ?
+                                                    HTML : e == "CSS" ?
+                                                        CSS : e == "SASS" ?
+                                                            SASS : e == "ThreeJS" ?
+                                                                ThreeJS : e == "Webpack" ?
+                                                                    Webpack : ""} alt="Technology" />
                             )}
                         </div>
                         <img className="ProjectItem__Preview__Background" src={params.preview} alt="" />

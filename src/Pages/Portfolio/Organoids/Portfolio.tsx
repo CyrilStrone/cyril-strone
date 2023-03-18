@@ -16,8 +16,8 @@ export const Portfolio = () => {
         <img className="Portfolio__Header__Image" src={Arrow} alt="Arrow" />
       </div>
       <div className="Portfolio__List">
-        {CodeItemsOriginal.map((e: any) =>
-          <ProjectItem new={e.new} type={e.type} name={e.name} description={e.description} technology={e.technology} link={e.link} preview={e.preview} />
+        {CodeItemsOriginal.map((e: any,id:any) =>
+          <ProjectItem key={id} new={e.new} type={e.type} name={e.name} description={e.description} technology={e.technology} link={e.link} preview={e.preview} />
         )}
       </div>
     </div>

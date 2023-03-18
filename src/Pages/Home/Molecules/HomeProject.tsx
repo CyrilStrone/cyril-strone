@@ -18,12 +18,12 @@ export const Project = () => {
             {t('Project__Title')}
             </div>
             <div className="Project__Items">
-                {CodeItemsOriginal.map((e:any)=>
-                     <ProjectItem new={e.new} type={e.type} name={e.name} description={e.description} technology={e.technology} link={e.link} preview={e.preview} />
+                {CodeItemsOriginal.map((e:any, id:any)=>
+                     id < 2 && <ProjectItem key={id} new={e.new} type={e.type} name={e.name} description={e.description} technology={e.technology} link={e.link} preview={e.preview} />
                 )}
             </div>
             
-            <NavLink to={"/Snippet"} className="Project__Button">
+            <NavLink to={"/Portfolio"} className="Project__Button">
                 <img src={More} alt="" />
                 {t('Project__Button')}
             </NavLink>

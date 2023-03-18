@@ -45,6 +45,20 @@
 .Do__Cards .Card {
   margin-left: 30px;
 }
+@media screen and (orientation: landscape) and (max-device-width: 1140px) {
+  .Do {
+    max-width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .Do__Cards .Card:first-child {
+    margin-left: 00px;
+  }
+  .Do__Cards {
+    margin-top: 50px;
+  }
+}
 @media screen and (orientation: portrait) {
   .Do {
     margin-top: 14px;
@@ -62,7 +76,6 @@
     width: 100%;
     display: flex;
     justify-content: center;
-
   }
   .Do__Description__Text {
     font-size: 14px;

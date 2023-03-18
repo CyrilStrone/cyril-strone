@@ -103,6 +103,11 @@
 .Bio__Title {
   display: none;
 }
+@media screen and (orientation: landscape)  and (max-device-width: 1140px) {
+  .Bio__Biography {
+    max-width: 250px;
+  }
+}
 @media screen and (orientation: portrait) {
   .Bio__Title {
     display: block;

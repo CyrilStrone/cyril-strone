@@ -17,6 +17,8 @@ import { useStore } from 'effector-react';
 import { setProjectItemsOriginal } from './Common/Lists/ProjectItemsOriginal';
 
 import Cepr from "./Common/Projects/Cepr.png"
+import OV from "./Common/Projects/OV.png"
+import BR from "./Common/Projects/BR.png"
 
 i18n
   .use(initReactI18next) // passes i18n down to react-i18next
@@ -47,12 +49,32 @@ i18n
           "Snippet__SearchBar__Title": "Search code snippet",
           "Snippet__SearchBar__InputBar": "Type your favorite snippet here, hehehe .....",
 
-          "CodeItemsOriginal__One__name": "Nextjs Starter",
-          "CodeItemsOriginal__One__description": "A dead simple for nextjs project.",
+          "CodeItemsOriginal__One__name": "React-Solutions",
+          "CodeItemsOriginal__One__description": "In this project, I collect all the problems that I encounter while learning React.",
+
+          "CodeItemsOriginal__Two__name": "Cyril Strone",
+          "CodeItemsOriginal__Two__description": "Code of the website you are currently on.",
+
+          "CodeItemsOriginal__Three__name": "SevenWinds",
+          "CodeItemsOriginal__Three__description": "A test task for the guys from SevenWinds.",
+
+          "CodeItemsOriginal__Four__name": "Website Diploma",
+          "CodeItemsOriginal__Four__description": "My graduation project for the university.",
+
+          "CodeItemsOriginal__Five__name": "My first Website",
+          "CodeItemsOriginal__Five__description": "My first pure js and html project.",
 
           "ProjectItemsOriginal__One__name": "CEPR",
-          "ProjectItemsOriginal__One__description": "Serrow restructured and designed core pages, creating interactive elements that put users in control and allowed them to discover the information needed to make a decision.",
+          "ProjectItemsOriginal__One__description": "Presentation for CEPR clients. 3D models, many libraries and offline version.",
           "ProjectItemsOriginal__One__type": "Web Development",
+
+          "ProjectItemsOriginal__Two__name": "OV",
+          "ProjectItemsOriginal__Two__description": "Website catalog of a clothing store.",
+          "ProjectItemsOriginal__Two__type": "Web Development",
+
+          "ProjectItemsOriginal__Three__name": "Business Roulette",
+          "ProjectItemsOriginal__Three__description": "Social network for lightning-fast search and establishment of business contacts.",
+          "ProjectItemsOriginal__Three__type": "Web Development(in work)",
         }
       },
       ru: {
@@ -80,12 +102,32 @@ i18n
           "Snippet__SearchBar__Title": "Поиск code snippet",
           "Snippet__SearchBar__InputBar": "Введите ваш любимый code snippet, хехехе .....",
 
-          "CodeItemsOriginal__One__name": "Nextjs Starter",
-          "CodeItemsOriginal__One__description": "Страшный и опасный проект.",
+          "CodeItemsOriginal__One__name": "React-Solutions",
+          "CodeItemsOriginal__One__description": "В этом проекте я собираю все проблемы, с которыми я сталкиваюсь при изучении React.",
+
+          "CodeItemsOriginal__Two__name": "Cyril Strone",
+          "CodeItemsOriginal__Two__description": "Код сайта, на котором вы сейчас находитесь.",
+
+          "CodeItemsOriginal__Three__name": "SevenWinds",
+          "CodeItemsOriginal__Three__description": "Тестовое задание для ребят из SevenWinds.",
+
+          "CodeItemsOriginal__Four__name": "Website-Diploma",
+          "CodeItemsOriginal__Four__description": "Мой дипломный проект для университета.",
+
+          "CodeItemsOriginal__Five__name": "Мой первый сайт",
+          "CodeItemsOriginal__Five__description": "Мой первый проект на чистом js и html.",
 
           "ProjectItemsOriginal__One__name": "ЦЭПР",
-          "ProjectItemsOriginal__One__description": "Большой такой ух 3 дээээ крутяяяг.",
-          "ProjectItemsOriginal__One__type": "Web Development",
+          "ProjectItemsOriginal__One__description": "Презентация для клиентов CEPR. 3D-модели, множество библиотек и офлайн-версия.",
+          "ProjectItemsOriginal__One__type": "Web Разработка",
+
+          "ProjectItemsOriginal__Two__name": "OV",
+          "ProjectItemsOriginal__Two__description": "Сайт каталог магазина одежды.",
+          "ProjectItemsOriginal__Two__type": "Web Разработка",
+
+          "ProjectItemsOriginal__Three__name": "Business Roulette",
+          "ProjectItemsOriginal__Three__description": "Социальная сеть для молниеносного поиска и установления деловых контактов.",
+          "ProjectItemsOriginal__Three__type": "Web Разработка(В работе)",
 
         }
       }
@@ -114,13 +156,13 @@ function App() {
 
   }, [i18n])
 
-  useEffect(()=>{
+  useEffect(() => {
     if (choiseLang) {
       localStorage.setItem("language", "en");
-    }else{
+    } else {
       localStorage.setItem("language", "ru");
     }
-  },[choiseLang])
+  }, [choiseLang])
 
   useEffect(() => {
     const handleResize = () => {
@@ -142,51 +184,70 @@ function App() {
       {
         name: t('CodeItemsOriginal__One__name'),
         description: t('CodeItemsOriginal__One__description'),
-        technology: ["React"],
-        link: "/",
+        technology: ["React","TypeScript"],
+        link: "https://github.com/CyrilStrone/React-Solutions",
         stars: 2
       },
       {
-        name: t('CodeItemsOriginal__One__name'),
-        description: t('CodeItemsOriginal__One__description'),
-        technology: ["React"],
-        link: "/",
+        name: t('CodeItemsOriginal__Two__name'),
+        description: t('CodeItemsOriginal__Two__description'),
+        technology: ["React","TypeScript","SASS"],
+        link: "https://github.com/CyrilStrone/CyrilStrone",
         stars: 3
       },
       {
-        name: t('CodeItemsOriginal__One__name'),
-        description: t('CodeItemsOriginal__One__description'),
-        technology: ["React"],
-        link: "/",
+        name: t('CodeItemsOriginal__Three__name'),
+        description: t('CodeItemsOriginal__Three__description'),
+        technology: ["React","TypeScript"],
+        link: "https://github.com/CyrilStrone/SevenWinds_Test",
         stars: 1
       },
       {
-        name: t('CodeItemsOriginal__One__name'),
-        description: t('CodeItemsOriginal__One__description'),
-        technology: ["React"],
-        link: "/",
+        name: t('CodeItemsOriginal__Four__name'),
+        description: t('CodeItemsOriginal__Four__description'),
+        technology: ["React","TypeScript","Webpack"],
+        link: "https://github.com/CyrilStrone/Website-Diploma",
+        stars: 1
+      },
+      {
+        name: t('CodeItemsOriginal__Five__name'),
+        description: t('CodeItemsOriginal__Five__description'),
+        technology: ["HTML","CSS","JavaScript"],
+        link: "https://github.com/CyrilStrone/My-First-Website",
         stars: 1
       }
     ])
-    setProjectItemsOriginal([{
-      new: true,
-      name: t('ProjectItemsOriginal__One__name'),
-      description: t('ProjectItemsOriginal__One__description'),
-      technology: ["React"],
-      link: "https://portal.coolantsatellite.com/presentation/",
-      type: t('ProjectItemsOriginal__One__type'),
-      preview: Cepr
-    },
-    {
-      new: true,
-      name: t('ProjectItemsOriginal__One__name'),
-      description: t('ProjectItemsOriginal__One__description'),
-      technology: ["React"],
-      link: "https://portal.coolantsatellite.com/presentation/",
-      type: t('ProjectItemsOriginal__One__type'),
-      preview: Cepr
-    }])
+    setProjectItemsOriginal([
+      {
+        new: true,
+        name: t('ProjectItemsOriginal__One__name'),
+        description: t('ProjectItemsOriginal__One__description'),
+        technology: ["React","TypeScript","ThreeJS"],
+        link: "https://portal.coolantsatellite.com/presentation/",
+        type: t('ProjectItemsOriginal__One__type'),
+        preview: Cepr
+      },
+      {
+        new: false,
+        name: t('ProjectItemsOriginal__Two__name'),
+        description: t('ProjectItemsOriginal__Two__description'),
+        technology: ["React","TypeScript"],
+        link: "https://gamereviewer.ru/",
+        type: t('ProjectItemsOriginal__Two__type'),
+        preview: OV
+      },
+      {
+        new: false,
+        name: t('ProjectItemsOriginal__Three__name'),
+        description: t('ProjectItemsOriginal__Three__description'),
+        technology: ["React","TypeScript","Webpack"],
+        link: "https://businessroulette.ru/",
+        type: t('ProjectItemsOriginal__Three__type'),
+        preview: BR
+      }
+    ])
   }, [choiseLang, t])
+
   return (
     <div className="App">
       <div className="App__Languages" onClick={() => setchoiseLang(!choiseLang)}>
