@@ -16,11 +16,11 @@ export const Code = () => {
                 {t('Code__Title')}
             </div>
             <div className="Code__Items">
-                {CodeItemsOriginal && CodeItemsOriginal.map((e: any) =>
-                    <CodeItems name={e.name} description={e.description} technology={e.technology} link={e.link} stars={e.stars} />
+                {CodeItemsOriginal && CodeItemsOriginal.map((e: any, id: any) =>
+                    <CodeItems key={id} name={e.name} description={e.description} technology={e.technology} link={e.link} stars={e.stars} />
                 )}
             </div>
-            <NavLink to={"/Portfolio"} className="Project__Button">
+            <NavLink to={"/Snippet"} className="Project__Button">
                 <img src={More} alt="" />
                 {t('Project__Button')}
             </NavLink>

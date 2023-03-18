@@ -15,6 +15,7 @@
   align-items: center;
   justify-content: space-between;
   height: 100%;
+  padding-bottom: 150px;
 }
 .BlueDark {
   color: #4ca9ff;
@@ -34,6 +35,15 @@
 }
 .App__Languages{
   display: none;
+}
+@media screen and (orientation: landscape)  and (max-device-width: 1140px) {
+  .App__Actual {
+    max-width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+    align-items: center;
+    justify-content: center;
+  }
 }
 @media screen and (orientation: portrait) {
   .App__Actual {

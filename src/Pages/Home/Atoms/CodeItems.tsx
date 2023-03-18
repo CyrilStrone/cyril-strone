@@ -1,9 +1,15 @@
 
 import "../Styles/CodeItems.scss"
 import React from "../../../Common/Icons/React.svg"
+import TypeScript from "../../../Common/Icons/TypeScript.svg"
+import JavaScript from "../../../Common/Icons/JavaScript.svg"
+import HTML from "../../../Common/Icons/HTML.svg"
+import CSS from "../../../Common/Icons/CSS.svg"
+import SASS from "../../../Common/Icons/SASS.svg"
+import ThreeJS from "../../../Common/Icons/ThreeJS.svg"
+import Webpack from "../../../Common/Icons/Webpack.svg"
+
 import Star from "../../../Common/Icons/Star.svg"
-import Link from "../../../Common/Icons/Link.svg"
-import { NavLink } from "react-router-dom";
 export interface ICodeItems {
     name: string
     description: string
@@ -13,7 +19,7 @@ export interface ICodeItems {
 }
 export const CodeItems = (params: ICodeItems) => {
     return (
-        <NavLink to={params.link} className="CodeItems">
+        <a target="_blank" href={params.link} className="CodeItems">
             {/* <a target="_blank" href={params.link} className="CodeItems__Link">
                 <img className="CodeItems__Link__Image" src={Link} alt="" />
             </a> */}
@@ -27,8 +33,17 @@ export const CodeItems = (params: ICodeItems) => {
             </div>
             <div className="CodeItems__Footer">
                 <div className="CodeItems__Footer__Technology">
-                    {params.technology.map((e: any) =>
-                        <img className="CodeItems__Preview__Technology__Item" src={e == "React" ? React : ""} alt="Technology" />
+                    {params.technology.map((e: any, id: any) =>
+                        <img key={id} className="CodeItems__Preview__Technology__Item"
+                            src={e == "React" ?
+                                React : e == "TypeScript" ?
+                                    TypeScript : e == "JavaScript" ?
+                                        JavaScript : e == "HTML" ?
+                                            HTML : e == "CSS" ?
+                                                CSS : e == "SASS" ?
+                                                    SASS : e == "ThreeJS" ?
+                                                        ThreeJS : e == "Webpack" ?
+                                                            Webpack : ""} alt="Technology" />
                     )}
                 </div>
                 <div className="CodeItems__Footer__Stars">
@@ -39,6 +54,6 @@ export const CodeItems = (params: ICodeItems) => {
                     </div>
                 </div>
             </div>
-        </NavLink>
+        </a>
     );
 };

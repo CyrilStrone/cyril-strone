@@ -58,8 +58,8 @@ export const Snippet = () => {
                 </div>
             </div>
             <div className="Snippet__Items">
-                {CodeItemsDublicat && CodeItemsDublicat.map((e: any) =>
-                    <CodeItems name={e.name} description={e.description} technology={e.technology} link={e.link} stars={e.stars} />
+                {CodeItemsDublicat && CodeItemsDublicat.map((e: any,id:any) =>
+                    <CodeItems key={id} name={e.name} description={e.description} technology={e.technology} link={e.link} stars={e.stars} />
                 )}
             </div>
         </div>

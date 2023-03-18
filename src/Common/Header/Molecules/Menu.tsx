@@ -24,8 +24,8 @@ export const Menu = () => {
   ];
   return (
     <>
-      {MenuArray.map((e: any) => (
-        <MenuItems name={e.name} href={e.href} />
+      {MenuArray.map((e: any,id:any) => (
+        <MenuItems key={id} name={e.name} href={e.href} />
       ))}
     </>
   );

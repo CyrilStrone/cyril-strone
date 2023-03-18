@@ -25,3 +25,10 @@
     display: none;
   }
 }
+@media screen and (orientation: landscape)  and (max-device-width: 1140px) {
+  .Header__Actual {
+    max-width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
