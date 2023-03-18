@@ -10,7 +10,7 @@ export const Portfolio = () => {
     <div className="Portfolio">
       <div className="Portfolio__Header">
         <div className="Portfolio__Header__Title">
-          Project that i has been done
+          Project that i has been <p className="Green">done</p>.
         </div>
         <img className="Portfolio__Header__Image" src={Arrow} alt="Arrow" />
       </div>

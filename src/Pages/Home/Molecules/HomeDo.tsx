@@ -12,7 +12,7 @@ export const Do = () => {
                     What I do
                 </div>
                 <div className="Do__Description__Text">
-                    Build and maintain websites, frontend dev also have a mentorship called MOFON. My motto is Beauty and function in equal measure as priority.
+                    Build and maintain websites, <p className="Blue">frontend dev</p> also have a mentorship called <p className="Green">MOFON</p>. My motto is Beauty and function in equal measure as priority.
                 </div>
             </div>
             <div className="Do__Cards">

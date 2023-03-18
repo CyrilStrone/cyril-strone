@@ -11,9 +11,6 @@
   font-weight: 700;
   font-size: 56px;
   /* or 129% */
-
-  display: flex;
-  align-items: center;
   letter-spacing: 1px;
   max-width: 458px;
   color: #ffffff;

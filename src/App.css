@@ -16,6 +16,22 @@
   justify-content: space-between;
   height: 100%;
 }
+.BlueDark {
+  color: #4ca9ff;
+  display: inline;
+}
+.Blue {
+  color: #62D9FF;
+  display: inline;
+}
+.Green {
+  color: #80FFA3;
+  display: inline;
+}
+.GreenBlue {
+  color: #D6D6D6;
+  display: inline;
+}
 @media screen and (orientation: portrait) {
   .App__Actual {
     padding-left: 24px;

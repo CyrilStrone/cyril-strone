@@ -6,9 +6,17 @@ import { Header } from './Common/Header/Organoids/Header';
 import { Footer } from './Common/Footer/Organoids/Footer';
 import { Portfolio } from './Pages/Portfolio/Organoids/Portfolio';
 import { Snippet } from './Pages/Snippet/Organoids/Snippet';
+import { useTranslation } from 'react-i18next';
+import { useEffect } from 'react';
+import './i18n';
 
 function App() {
+  const { t, i18n } = useTranslation();
 
+  const changeLanguage = () => {
+    i18n.changeLanguage("ru");
+  };
+  changeLanguage()
   return (
     <div className="App">
       <Header />
