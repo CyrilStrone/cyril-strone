@@ -17,7 +17,7 @@ export const Code = () => {
             </div>
             <div className="Code__Items">
                 {CodeItemsOriginal && CodeItemsOriginal.map((e: any, id: any) =>
-                    <CodeItems key={id} name={e.name} description={e.description} technology={e.technology} link={e.link} stars={e.stars} />
+                    id < 4 && <CodeItems key={id} name={e.name} description={e.description} technology={e.technology} link={e.link} stars={e.stars} />
                 )}
             </div>
             <NavLink to={"/Snippet"} className="Project__Button">

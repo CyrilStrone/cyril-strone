@@ -9,6 +9,7 @@ import { Do } from "../Molecules/HomeDo";
 import { Project } from "../Molecules/HomeProject";
 import { useStore } from "effector-react";
 import { useTranslation } from "react-i18next";
+import Typewriter from "react-ts-typewriter";
 export const Home = () => {
   const screenSizeEvent = useStore($screenSizeEvent);
   const { t,i18n } = useTranslation()
@@ -16,8 +17,8 @@ export const Home = () => {
     <div className="Home">
       {screenSizeEvent.width > screenSizeEvent.height ?
         <>
-          <div onClick={()=>  i18n.changeLanguage("ru")} className="Home__Title">
-            {t('Home__Title')}
+          <div  className="Home__Title">
+            <Typewriter text={t('Home__Title') || ""} />
           </div>
           <Bio  />
           <Do />

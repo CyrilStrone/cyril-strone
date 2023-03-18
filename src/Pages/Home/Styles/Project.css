@@ -41,8 +41,9 @@
   letter-spacing: 1px;
   color: #c9c9c9;
   cursor: pointer;
-  text-decoration: none;
+  text-decoration: none; 
 }
+
 .Project__Button img {
   height: 14px;
   padding-right: 30px;
