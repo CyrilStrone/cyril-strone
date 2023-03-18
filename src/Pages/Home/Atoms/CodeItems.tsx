@@ -2,6 +2,7 @@
 import "../Styles/CodeItems.scss"
 import React from "../../../Common/Icons/React.svg"
 import Star from "../../../Common/Icons/Star.svg"
+import Link from "../../../Common/Icons/Link.svg"
 import { NavLink } from "react-router-dom";
 export interface ICodeItems {
     name: string
@@ -13,6 +14,9 @@ export interface ICodeItems {
 export const CodeItems = (params: ICodeItems) => {
     return (
         <NavLink to={params.link} className="CodeItems">
+            {/* <a target="_blank" href={params.link} className="CodeItems__Link">
+                <img className="CodeItems__Link__Image" src={Link} alt="" />
+            </a> */}
             <div className="CodeItems__Info">
                 <div className="CodeItems__Info__Name">
                     {params.name}
@@ -30,7 +34,7 @@ export const CodeItems = (params: ICodeItems) => {
                 <div className="CodeItems__Footer__Stars">
                     <img src={Star} alt="Star" />
                     <div className="CodeItems__Footer__Stars__Text">
-                        {params.stars+" "}
+                        {params.stars + " "}
                         Stars
                     </div>
                 </div>

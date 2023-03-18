@@ -15,11 +15,12 @@
   justify-content: space-between;
   text-decoration: none;
   flex: 1 1 calc((100% / 2) - 28px);
+  position: relative;
 }
 .CodeItems__Info {
 }
 .CodeItems__Info__Name {
-  font-family: "Sora";
+  font-family: "Manrope";
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
@@ -78,7 +79,25 @@
 .CodeItems__Footer__Stars img {
   width: 16px;
 }
+.CodeItems__Link__Image{
+  box-sizing: border-box;
+  width: 36px;
+  height: 36px;
+  padding: 7.5px;
+  background: #3f4152;
+  border-radius: 9px;
+}
+.CodeItems__Link{
+  position: absolute;
+  right: 9px;
+  top: 10px;
+}
 @media screen and (orientation: portrait) {
+  .CodeItems__Link__Image {
+    border-radius: 4px;
+    width: 24px;
+    height: 24px;
+  }
   .CodeItems {
     padding-top: 24px;
     padding-bottom: 24px;

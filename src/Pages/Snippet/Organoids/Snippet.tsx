@@ -5,11 +5,17 @@ import { CodeItems } from "../../Home/Atoms/CodeItems";
 import { useEffect, useState } from "react";
 import { useStore } from "effector-react";
 import { $CodeItemsOriginal } from "../../../Common/Lists/CodeItemsOriginal";
+import { useTranslation } from "react-i18next";
 
 export const Snippet = () => {
+    const { t } = useTranslation()
     const [value, setValue] = useState<any>({ text: "" });
     const CodeItemsOriginal = useStore($CodeItemsOriginal);
-    const [CodeItemsDublicat, setCodeItemsDublicat] = useState<any>(CodeItemsOriginal)
+    const [CodeItemsDublicat, setCodeItemsDublicat] = useState<any>([])
+
+    useEffect(()=>{
+        setCodeItemsDublicat(CodeItemsOriginal)
+    },[CodeItemsOriginal])
 
     const handleTextChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setValue((prevPerson: any) => ({
@@ -31,7 +37,7 @@ export const Snippet = () => {
     };
     useEffect(() => {
         if (value.text == '') {
-            setCodeItemsDublicat(CodeItemsOriginal,)
+            setCodeItemsDublicat(CodeItemsOriginal)
         } else {
             handleSearch()
         }
@@ -40,14 +46,14 @@ export const Snippet = () => {
     return (
         <div className="Snippet">
             <div className="Snippet__Title">
-                Code Snippet
+                {t('Snippet__Title')}
             </div>
             <div className="Snippet__SearchBar">
                 <div className="Snippet__SearchBar__Title">
-                    Search code snippet
+                    {t('Snippet__SearchBar__Title')}
                 </div>
                 <div className="Snippet__SearchBar__InputBar">
-                    <input onChange={handleTextChange} value={value.text} placeholder="Type your favorite snippet here, hehehe ....." type="text" />
+                    <input onChange={handleTextChange} value={value.text} placeholder={t('Snippet__SearchBar__InputBar') || "Type your favorite snippet here, hehehe ....."} type="text" />
                     <img className="Snippet__SearchBar__Icon" src={Search} alt="" />
                 </div>
             </div>

@@ -1,21 +1,24 @@
+import { useTranslation } from "react-i18next";
 import { MenuItems } from "../Atoms/MenuItems";
 import "../Styles/Menu.css";
 export const Menu = () => {
+  const { t } = useTranslation()
+
   const MenuArray: any = [
     {
-      name:"Home",
+      name:t('Header__Home'),
       href:"",
     },
     {
-      name:"Portfolio",
+      name:t('Header__Portfolio'),
       href:"Portfolio",
     },
     {
-      name:"Snippet",
+      name:t('Header__Snippet'),
       href:"Snippet",
     },
     {
-      name:"Blog",
+      name:t('Header__Blog'),
       href:"Blog",
     }
   ];

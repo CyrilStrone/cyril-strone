@@ -1,8 +1,39 @@
 .Footer {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 58px;
+  padding-bottom: 58px;
+  border-top: 1px solid #4D4D4D;
+  width: 100%;
+  margin-top: auto;
+}
+.Footer__Title {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: #f4f4f4;
+}
+.Footer__LinkBar{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+  margin-top: 16px;
+}
+.Footer__Item{
+  opacity: 1;
+}
+.Footer__Item__Img {
+  width: 20px;
+  height: 20px;
 }
 @media screen and (orientation: portrait) {
   .Footer {
+    padding-top: 0px;
+    padding-bottom: 0px;
     display: flex;
     height: 76px;
     width: 100%;
@@ -13,20 +44,22 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
+    flex-direction: row;
+    border-top:0;
   }
 
   .Footer__Item {
     cursor: pointer;
     flex-grow: 1;
     flex-shrink: 1;
-    flex-basis:  20px;
+    flex-basis: 20px;
     width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
     align-content: center;
     text-decoration: none;
-    opacity:0.4;
+    opacity: 0.4;
   }
   .Footer__Item__Img {
     width: 20px;
@@ -40,7 +73,7 @@
     font-size: 14px;
     line-height: 24px;
     /* or 171% */
-  
+
     display: flex;
     align-items: center;
     letter-spacing: 0.006em;

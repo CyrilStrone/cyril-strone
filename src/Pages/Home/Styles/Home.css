@@ -1,5 +1,5 @@
 .Home__Title {
-  font-family: "Sora";
+  font-family: "Manrope";
   font-style: normal;
   font-weight: 700;
   font-size: 56px;
@@ -16,5 +16,7 @@
     padding-bottom: 150px;
 }
 @media screen and (orientation: portrait) {
-
+.Home{
+  padding-bottom: 0;
+}
 }

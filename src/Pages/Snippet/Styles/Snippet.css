@@ -3,10 +3,11 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  margin-top: 78px;
+  margin-top: 72px;
+  width: 100%;
 }
 .Snippet__Title {
-  font-family: "Sora";
+  font-family: "Manrope";
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
@@ -76,17 +77,18 @@
 }
 @media screen and (orientation: portrait) {
   .Snippet {
-    margin-top: 28px;
+    margin-top: 0;
+    
   }
   .Snippet__Title {
-    font-family: "Sora";
+    font-family: "Manrope";
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
-    /* or 125% */
-    height: 83px;
-    padding-bottom: 15px;
+    height: 126px;
+    padding-bottom: 0;
+    padding-top: 0;
     display: flex;
     align-items: center;
     letter-spacing: 1px;
@@ -111,6 +113,11 @@
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.006em;
+
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 19px;
+    padding-right: 39px;
   }
   .Snippet__SearchBar__Icon {
     width: 13.5px;

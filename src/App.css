@@ -32,11 +32,30 @@
   color: #D6D6D6;
   display: inline;
 }
+.App__Languages{
+  display: none;
+}
 @media screen and (orientation: portrait) {
   .App__Actual {
     padding-left: 24px;
     padding-right: 24px;
     align-items: center;
     justify-content: center;
+    padding-bottom: 90px;
+  }
+  .App__Languages{
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    cursor: pointer;
+    
   }
 }

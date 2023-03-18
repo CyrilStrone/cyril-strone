@@ -6,14 +6,16 @@ import { ProjectItem } from "../Atoms/ProjectItem";
 import { NavLink } from "react-router-dom";
 import { useStore } from "effector-react";
 import { $ProjectItemsOriginal } from "../../../Common/Lists/ProjectItemsOriginal";
+import { useTranslation } from "react-i18next";
 
 export const Project = () => {
     const CodeItemsOriginal = useStore($ProjectItemsOriginal);
+    const { t } = useTranslation()
 
     return (
         <div className="Project">
             <div className="Project__Title">
-                Featured Project
+            {t('Project__Title')}
             </div>
             <div className="Project__Items">
                 {CodeItemsOriginal.map((e:any)=>
@@ -23,7 +25,7 @@ export const Project = () => {
             
             <NavLink to={"/Snippet"} className="Project__Button">
                 <img src={More} alt="" />
-                See More
+                {t('Project__Button')}
             </NavLink>
         </div>
     );

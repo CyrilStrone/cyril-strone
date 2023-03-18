@@ -3,7 +3,6 @@ import "../Styles/ProjectItem.css"
 import React from "../../../Common/Icons/React.svg"
 import Link from "../../../Common/Icons/Link.svg"
 import New from "../../../Common/Icons/New.svg"
-import { NavLink } from "react-router-dom";
 import { useStore } from "effector-react";
 import { $screenSizeEvent } from "../../../Common/Size/Size";
 export interface IProjectItem {

@@ -36,13 +36,13 @@
   max-width: 500px;
 }
 .Bio__Biography__Title {
-  font-family: "Sora";
+  font-family: "Manrope";
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
   letter-spacing: 1px;
   color: #fbfbfb;
-  font-family: "Sora";
+  font-family: "Manrope";
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
@@ -71,7 +71,7 @@
   margin-left: 85px;
 }
 .Bio__Connect__Title {
-  font-family: "Sora";
+  font-family: "Manrope";
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
@@ -106,7 +106,7 @@
 @media screen and (orientation: portrait) {
   .Bio__Title {
     display: block;
-    font-family: "Sora";
+    font-family: "Manrope";
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
@@ -114,7 +114,7 @@
     margin-top: 38px;
     text-align: center;
     letter-spacing: 1px;
-    max-width: 280px;
+    max-width: 500px;
     background: linear-gradient(134.01deg, #3bf686 40.75%, #4ca9ff 90.52%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -142,7 +142,7 @@
     margin-left: 0;
     align-items: center;
     margin-top: 22px;
-    max-width: 280px;
+    max-width: 500px;
   }
   .Bio__Biography__Title {
     font-size: 20px;
