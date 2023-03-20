@@ -1,7 +1,6 @@
-import { NavLink } from "react-router-dom";
-import inst from "../../../Common/Icons/inst.svg"
-import twit from "../../../Common/Icons/twit.svg"
-import face from "../../../Common/Icons/face.svg"
+import LinkedIn from "../../../Common/Icons/LinkedIn.svg"
+import GitHub from "../../../Common/Icons/GitHub.svg"
+import Telegram from "../../../Common/Icons/Telegram.svg"
 import Me from "../../../Common/Home/Me.png"
 import Circle from "../../../Common/Icons/Circle2.svg"
 
@@ -34,15 +33,15 @@ export const Bio = () => {
                             {t('Bio__Connect__Title')}
                         </div>
                         <div className="Bio__Connect__Icons">
-                            <NavLink to={"/"}>
-                                <img src={inst} alt="inst" />
-                            </NavLink>
-                            <NavLink to={"/"}>
-                                <img src={twit} alt="twit" />
-                            </NavLink>
-                            <NavLink to={"/"}>
-                                <img src={face} alt="face" />
-                            </NavLink>
+                            <a target=" _blank" href={"https://t.me/cyrilstrone"}>
+                                <img src={Telegram} alt="inst" />
+                            </a>
+                            <a target=" _blank" href={"https://github.com/CyrilStrone"}>
+                                <img src={GitHub} alt="twit" />
+                            </a>
+                            <a target=" _blank" href={"https://www.linkedin.com/in/cyrilstrone/"}>
+                                <img src={LinkedIn} alt="face" />
+                            </a>
                         </div>
                     </div>
                 </>
@@ -53,15 +52,15 @@ export const Bio = () => {
                             {t('Bio__Connect__Title')}
                         </div>
                         <div className="Bio__Connect__Icons">
-                            <NavLink to={"/"}>
-                                <img src={inst} alt="inst" />
-                            </NavLink>
-                            <NavLink to={"/"}>
-                                <img src={twit} alt="twit" />
-                            </NavLink>
-                            <NavLink to={"/"}>
-                                <img src={face} alt="face" />
-                            </NavLink>
+                            <a target=" _blank" href={"https://t.me/cyrilstrone"}>
+                                <img src={Telegram} alt="inst" />
+                            </a>
+                            <a target=" _blank" href={"https://github.com/CyrilStrone"}>
+                                <img src={GitHub} alt="twit" />
+                            </a>
+                            <a target=" _blank" href={"https://www.linkedin.com/in/cyrilstrone/"}>
+                                <img src={LinkedIn} alt="face" />
+                            </a>
                         </div>
                     </div>
                     <div className="Bio__Title">

@@ -6,7 +6,7 @@ import Portofolio from "../Assets/Portofolio.svg"
 import More from "../Assets/More.svg"
 import LinkedIn from "../../../Common/Icons/LinkedIn.svg"
 import GitHub from "../../../Common/Icons/GitHub.svg"
-import Twitter from "../../../Common/Icons/twit.svg"
+import Telegram from "../../../Common/Icons/Telegram.svg"
 
 import { $screenSizeEvent } from "../../Size/Size";
 import { useStore } from "effector-react";
@@ -56,8 +56,8 @@ export const Footer = () => {
             <a target="_blank" href={"https://github.com/CyrilStrone"} className="Footer__Item">
               <img className="Footer__Item__Img" src={GitHub} alt="" />
             </a>
-            <a target="_blank" href={"/"} className="Footer__Item">
-              <img className="Footer__Item__Img" src={Twitter} alt="" />
+            <a target="_blank" href={"https://t.me/cyrilstrone"} className="Footer__Item">
+              <img className="Footer__Item__Img" src={Telegram} alt="" />
             </a>
           </div>
         </>}
