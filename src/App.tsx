@@ -42,14 +42,14 @@ i18n
           "Footer__Title": "Reach me out",
           "Home__Title": "Hi, I'm Cyril Strone, Frontend developer who loves to learn and work with a team.",
           "Bio__Biography__Title": "Biography",
-          "Bio__Biography__Description": `I have been studying IT for over 5 years. Commercial experience 2 years. Passionate about React, UX.`,
+          "Bio__Biography__Description": `I have been studying IT for over 5 years. Commercial experience 2 years. Passionate about React, TypeScript.`,
           "Bio__Connect__Title": "Lets connect",
           "Do__Description__Title": "What I do",
           "Do__Description__Text": "Creation and support of websites, development of the external interface. My motto: Simplicity and functionality are a priority in equal measure.",
-          "Do__Cards__One__Title": "Web Development",
-          "Do__Cards__One__Description": "You will receive a customized plan for your fitness journey, and lots of support.",
-          "Do__Cards__Two__Title": "UX Research",
-          "Do__Cards__Two__Description": "You will receive a customized plan for your fitness journey, and lots of support.",
+          "Do__Cards__One__Title": "Web development",
+          "Do__Cards__One__Description": "Layout of web pages according to the layout. Refactoring of the written code. Bug fixes.",
+          "Do__Cards__Two__Title": "Modern сomponents",
+          "Do__Cards__Two__Description": "Development of the logic of the components.Introduction of new components into existing projects.",
           "Project__Title": "Featured Project",
           "Project__Button": "See More",
           "Code__Title": "Code Snippet",
@@ -70,11 +70,14 @@ i18n
           "CodeItemsOriginal__Three__name": "SevenWinds",
           "CodeItemsOriginal__Three__description": "A test task for the guys from SevenWinds.",
 
-          "CodeItemsOriginal__Four__name": "Website Diploma",
-          "CodeItemsOriginal__Four__description": "My graduation project for the university.",
+          "CodeItemsOriginal__Four__name": "UniSchool",
+          "CodeItemsOriginal__Four__description": "Pet-project with articles and teachers with students.",
 
           "CodeItemsOriginal__Five__name": "My first Website",
           "CodeItemsOriginal__Five__description": "My first pure js and html project.",
+
+          "CodeItemsOriginal__Six__name": "Clock and semicircle",
+          "CodeItemsOriginal__Six__description": "Test task, the essence of which is to get a value from api and display it as a clock.",
 
           "ProjectItemsOriginal__One__name": "Presentation",
           "ProjectItemsOriginal__One__description": "Presentation for the company's clients. 3D models, many libraries and offline version.",
@@ -111,14 +114,14 @@ i18n
           "Footer__Title": "Связаться со мной",
           "Home__Title": "Привет, я Кирилл, Frontend разработчик, который любит учиться и работать в команде.",
           "Bio__Biography__Title": "Биография",
-          "Bio__Biography__Description": 'Я изучаю IT более 5 лет. Коммерческий опыт 2 года. В восторге от React, UX.',
+          "Bio__Biography__Description": 'Я изучаю IT более 5 лет. Коммерческий опыт 2 года. В восторге от React, TypeScript.',
           "Bio__Connect__Title": "Контакты",
           "Do__Description__Title": "Чем я занимаюсь",
           "Do__Description__Text": "Создание и поддержка веб-сайтов, разработка внешнего интерфейса. Мой девиз: простота и функциональность в равной мере являются приоритетом.",
           "Do__Cards__One__Title": "Веб-разработка",
-          "Do__Cards__One__Description": "Вы получите индивидуальный план вашего приложения и большую поддержку.",
-          "Do__Cards__Two__Title": "UX-исследование",
-          "Do__Cards__Two__Description": "Вы получите индивидуальный план вашего приложения и большую поддержку.",
+          "Do__Cards__One__Description": "Верстка веб-страниц согласно макету.Рефакторинг написанного кода. Исправление багов.",
+          "Do__Cards__Two__Title": "Компоненты",
+          "Do__Cards__Two__Description": "Разработка логики работы компонентов.Внедрение новых компонентов в существующие проекты.",
           "Project__Title": "Избранные проекты",
           "Project__Button": "Посмотреть больше",
           "Code__Title": "Мой код",
@@ -139,11 +142,14 @@ i18n
           "CodeItemsOriginal__Three__name": "SevenWinds",
           "CodeItemsOriginal__Three__description": "Тестовое задание для ребят из SevenWinds.",
 
-          "CodeItemsOriginal__Four__name": "Website-Diploma",
-          "CodeItemsOriginal__Four__description": "Мой дипломный проект для университета.",
+          "CodeItemsOriginal__Four__name": "UniSchool",
+          "CodeItemsOriginal__Four__description": " Pet-project сайт со статьями, преподаватели и студентами.",
 
           "CodeItemsOriginal__Five__name": "Мой первый сайт",
           "CodeItemsOriginal__Five__description": "Мой первый проект на чистом js и html.",
+
+          "CodeItemsOriginal__Six__name": "Часы и полукруг",
+          "CodeItemsOriginal__Six__description": "Тестовое задание, суть которого в том, чтобы получить значение из api и отобразить его в виде часов.",
 
           "ProjectItemsOriginal__One__name": "Презентация",
           "ProjectItemsOriginal__One__description": "Презентация для клиентов компании. 3D-модели, множество библиотек и офлайн-версия.",
@@ -249,8 +255,8 @@ function App() {
       {
         name: t('CodeItemsOriginal__Four__name'),
         description: t('CodeItemsOriginal__Four__description'),
-        technology: ["React", "TypeScript", "Webpack"],
-        link: "https://github.com/CyrilStrone/Website-Diploma",
+        technology: ["React", "TypeScript"],
+        link: "https://github.com/CyrilStrone/unischool",
         stars: 1
       },
       {
@@ -258,6 +264,13 @@ function App() {
         description: t('CodeItemsOriginal__Five__description'),
         technology: ["HTML", "CSS", "JavaScript"],
         link: "https://github.com/CyrilStrone/My-First-Website",
+        stars: 1
+      },
+      {
+        name: t('CodeItemsOriginal__Six__name'),
+        description: t('CodeItemsOriginal__Six__description'),
+        technology: ["React", "TypeScript"],
+        link: "https://github.com/CyrilStrone/knight-test",
         stars: 1
       }
     ])
