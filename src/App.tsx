@@ -27,6 +27,7 @@ import SRMZHKH from './Common/Projects/SRMZHKH.png'
 import CeprDash from './Common/Projects/CeprDash.png'
 
 import BlogOne from "./Common/Blog/1.jpg"
+import { ApiGitHub, IApiGitHub } from './Common/ApiGitHub';
 
 
 i18n
@@ -190,7 +191,7 @@ function App() {
   const choiseLang = useStore($choiseLang);
   const { i18n } = useTranslation()
   useEffect(() => {
-    if (localStorage.getItem("language") == undefined) {      
+    if (localStorage.getItem("language") == undefined) {
       setchoiseLang("ru")
     } else {
       setchoiseLang(localStorage.getItem("language")?.toString() == "ru" ? "ru" : "en")
@@ -219,7 +220,7 @@ function App() {
   useEffect(() => {
     setScreenSizeEvent(screenSize)
   }, [screenSize])
-
+ 
   useEffect(() => {
     setBlogItemsOriginal([
       {
@@ -236,42 +237,42 @@ function App() {
         description: t('CodeItemsOriginal__One__description'),
         technology: ["React", "TypeScript"],
         link: "https://github.com/CyrilStrone/React-Solutions",
-        stars: 2
+        stars: "React-Solutions"
       },
       {
         name: t('CodeItemsOriginal__Two__name'),
         description: t('CodeItemsOriginal__Two__description'),
         technology: ["React", "TypeScript", "SASS"],
         link: "https://github.com/CyrilStrone/CyrilStrone",
-        stars: 3
+        stars: "CyrilStrone"
       },
       {
         name: t('CodeItemsOriginal__Three__name'),
         description: t('CodeItemsOriginal__Three__description'),
         technology: ["React", "TypeScript"],
         link: "https://github.com/CyrilStrone/SevenWinds_Test",
-        stars: 1
+        stars: "SevenWinds_Test"
       },
       {
         name: t('CodeItemsOriginal__Four__name'),
         description: t('CodeItemsOriginal__Four__description'),
         technology: ["React", "TypeScript"],
-        link: "https://github.com/CyrilStrone/unischool",
-        stars: 1
+        link: "https://github.com/CyrilStrone/unischool-vite",
+        stars: "unischool-vite"
       },
       {
         name: t('CodeItemsOriginal__Five__name'),
         description: t('CodeItemsOriginal__Five__description'),
         technology: ["HTML", "CSS", "JavaScript"],
         link: "https://github.com/CyrilStrone/My-First-Website",
-        stars: 1
+        stars: "My-First-Website"
       },
       {
         name: t('CodeItemsOriginal__Six__name'),
         description: t('CodeItemsOriginal__Six__description'),
         technology: ["React", "TypeScript"],
         link: "https://github.com/CyrilStrone/knight-test",
-        stars: 1
+        stars: "knight-test"
       }
     ])
     setProjectItemsOriginal([
@@ -324,7 +325,6 @@ function App() {
     ])
 
   }, [choiseLang, t])
-
   return (
     <div className="App">
       <div className="App__Languages" onClick={() => choiseLang !== "" && setchoiseLang(choiseLang == "ru" ? "en" : "ru")}>

@@ -10,14 +10,21 @@ import ThreeJS from "../../../Common/Icons/ThreeJS.svg"
 import Webpack from "../../../Common/Icons/Webpack.svg"
 
 import Star from "../../../Common/Icons/Star.svg"
+import { ApiGitHub, IApiGitHub } from "../../../Common/ApiGitHub"
+import { useState } from "react"
 export interface ICodeItems {
     name: string
     description: string
     technology: string[]
     link: string
-    stars: number
+    stars: string
 }
 export const CodeItems = (params: ICodeItems) => {
+    const [star, setStar] = useState<number>(0)
+    const requestApiGitHub = async (params: IApiGitHub) => {
+        setStar(await ApiGitHub({ ...params }))
+    }
+    requestApiGitHub({ profile: "CyrilStrone", repo: params.stars })
     return (
         <a target="_blank" href={params.link} className="CodeItems">
             {/* <a target="_blank" href={params.link} className="CodeItems__Link">
@@ -49,7 +56,7 @@ export const CodeItems = (params: ICodeItems) => {
                 <div className="CodeItems__Footer__Stars">
                     <img src={Star} alt="Star" />
                     <div className="CodeItems__Footer__Stars__Text">
-                        {params.stars + " "}
+                        {star + " "}
                         Stars
                     </div>
                 </div>
