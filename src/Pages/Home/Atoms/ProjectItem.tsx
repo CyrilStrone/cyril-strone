@@ -46,9 +46,10 @@ export const ProjectItem = (params: IProjectItem) => {
                             )}
                         </div>
                         <img className="ProjectItem__Preview__Background" src={params.preview} alt="" />
-                        <a target="_blank" href={params.link} className="ProjectItem__Preview__Button">
+                        {params.link && <a target="_blank" href={params.link} className="ProjectItem__Preview__Button">
                             <img className="ProjectItem__Preview__Background__Image" src={Link} alt="" />
-                        </a>
+                        </a>}
+
                     </div>
                     <div className="ProjectItem__Info">
                         <div className="ProjectItem__Info__Type">
@@ -76,8 +77,8 @@ export const ProjectItem = (params: IProjectItem) => {
                         {params.new && <img className="ProjectItem__Preview__New" src={New} />}
                         <div className="ProjectItem__Preview__Technology">
                             {params.technology.map((e: any, id: any) =>
-                                <img key={id} className="ProjectItem__Preview__Technology__Item" 
-                                src={e == "React" ?
+                                <img key={id} className="ProjectItem__Preview__Technology__Item"
+                                    src={e == "React" ?
                                         React : e == "TypeScript" ?
                                             TypeScript : e == "JavaScript" ?
                                                 JavaScript : e == "HTML" ?
@@ -89,9 +90,11 @@ export const ProjectItem = (params: IProjectItem) => {
                             )}
                         </div>
                         <img className="ProjectItem__Preview__Background" src={params.preview} alt="" />
-                        <a target="_blank" href={params.link} className="ProjectItem__Preview__Button">
-                            <img className="ProjectItem__Preview__Background__Image" src={Link} alt="" />
-                        </a>
+                        {params.link &&
+                            <a target="_blank" href={params.link} className="ProjectItem__Preview__Button">
+                                <img className="ProjectItem__Preview__Background__Image" src={Link} alt="" />
+                            </a>
+                        }
                     </div>
                     <div className="ProjectItem__Info__Description ">
                         {params.description}

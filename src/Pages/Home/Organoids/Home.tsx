@@ -16,7 +16,7 @@ export const Home = () => {
     <div className="Home">
       {screenSizeEvent.width > screenSizeEvent.height ?
         <>
-          <div onClick={()=>  i18n.changeLanguage("ru")} className="Home__Title">
+          <div  className="Home__Title">
             {t('Home__Title')}
           </div>
           <Bio  />

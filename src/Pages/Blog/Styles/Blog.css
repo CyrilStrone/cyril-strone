@@ -1,35 +1,36 @@
-.Portfolio {
+.Blog {
   margin-top: 72px;
+  width: 100%;
 }
-.Portfolio__Header__Image {
+.Blog__Header__Image {
   width: 166.82px;
   height: 166.82px;
 }
-.Portfolio__Header__Title {
+.Blog__Header__Title {
   font-family: "Manrope";
   font-style: normal;
   font-weight: 700;
   font-size: 56px;
   letter-spacing: 1px;
-  max-width: 570px;
+  max-width: 526px;
   color: #ffffff;
 }
-.Portfolio__Header__Image {
+.Blog__Header__Image {
 }
-.Portfolio__Header {
+.Blog__Header {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: row;
 }
-.Portfolio__List {
+.Blog__List {
   margin-top: 30px;
 }
 @media screen and (orientation: portrait) {
-  .Portfolio {
+  .Blog {
     margin-top: 0;
   }
-  .Portfolio__Header__Title {
+  .Blog__Header__Title {
     font-size: 24px;
     height: auto;
     letter-spacing: 1px;
@@ -38,10 +39,10 @@
     padding-top: 0;
     padding-bottom: 0;
   }
-  .Portfolio__Header__Image {
+  .Blog__Header__Image {
     display: none;
   }
-  .Portfolio__Header {
+  .Blog__Header {
     justify-content: center;
     border-bottom: 1px solid #4d4d4d;
     width: 100%;
@@ -49,7 +50,7 @@
     display: flex;
     align-items: center;
   }
-  .Portfolio__List {
+  .Blog__List {
     margin-top: 42px;
   }
 }
