@@ -62,20 +62,17 @@ i18n
           "BlogItem__Button": "Show",
           "BlogItem__Button__Text": "Hide",
 
-          "CodeItemsOriginal__One__name": "React-Solutions",
-          "CodeItemsOriginal__One__description": "In this project, I collect all the problems that I encounter while learning React.",
-
           "CodeItemsOriginal__Two__name": "Cyril Strone",
           "CodeItemsOriginal__Two__description": "Code of the website you are currently on.",
 
           "CodeItemsOriginal__Three__name": "SevenWinds",
-          "CodeItemsOriginal__Three__description": "A test task for the guys from SevenWinds.",
+          "CodeItemsOriginal__Three__description": "A test task for the guys from SevenWinds. Creating and editing a tree.",
 
           "CodeItemsOriginal__Four__name": "UniSchool",
           "CodeItemsOriginal__Four__description": "Pet-project with articles and teachers with students.",
 
-          "CodeItemsOriginal__Five__name": "My first Website",
-          "CodeItemsOriginal__Five__description": "My first pure js and html project.",
+          "CodeItemsOriginal__Five__name": "MitraSoft",
+          "CodeItemsOriginal__Five__description": "Test task for MitraSoft. List of publications and users.",
 
           "CodeItemsOriginal__Six__name": "Clock and semicircle",
           "CodeItemsOriginal__Six__description": "Test task, the essence of which is to get a value from api and display it as a clock.",
@@ -83,10 +80,6 @@ i18n
           "ProjectItemsOriginal__One__name": "Presentation",
           "ProjectItemsOriginal__One__description": "Presentation for the company's clients. 3D models, many libraries and offline version.",
           "ProjectItemsOriginal__One__type": "Web Development",
-
-          "ProjectItemsOriginal__Two__name": "OV",
-          "ProjectItemsOriginal__Two__description": "Website catalog of a clothing store.",
-          "ProjectItemsOriginal__Two__type": "Web Development",
 
           "ProjectItemsOriginal__Three__name": "Business Roulette",
           "ProjectItemsOriginal__Three__description": "Social network for lightning-fast search and establishment of business contacts.",
@@ -134,20 +127,17 @@ i18n
           "BlogItem__Button": "Показать полностью",
           "BlogItem__Button__Text": "Скрыть",
 
-          "CodeItemsOriginal__One__name": "React-Solutions",
-          "CodeItemsOriginal__One__description": "В этом проекте я собираю все проблемы, с которыми я сталкиваюсь при изучении React.",
-
           "CodeItemsOriginal__Two__name": "Cyril Strone",
           "CodeItemsOriginal__Two__description": "Код сайта, на котором вы сейчас находитесь.",
 
           "CodeItemsOriginal__Three__name": "SevenWinds",
-          "CodeItemsOriginal__Three__description": "Тестовое задание для ребят из SevenWinds.",
+          "CodeItemsOriginal__Three__description": "Тестовое задание для ребят из SevenWinds. Создание и редактирование дерева.",
 
           "CodeItemsOriginal__Four__name": "UniSchool",
           "CodeItemsOriginal__Four__description": " Pet-project сайт со статьями, преподаватели и студентами.",
 
-          "CodeItemsOriginal__Five__name": "Мой первый сайт",
-          "CodeItemsOriginal__Five__description": "Мой первый проект на чистом js и html.",
+          "CodeItemsOriginal__Five__name": "MitraSoft",
+          "CodeItemsOriginal__Five__description": "Тестовое задание для MitraSoft. Список публикаций и пользователи.",
 
           "CodeItemsOriginal__Six__name": "Часы и полукруг",
           "CodeItemsOriginal__Six__description": "Тестовое задание, суть которого в том, чтобы получить значение из api и отобразить его в виде часов.",
@@ -155,10 +145,6 @@ i18n
           "ProjectItemsOriginal__One__name": "Презентация",
           "ProjectItemsOriginal__One__description": "Презентация для клиентов компании. 3D-модели, множество библиотек и офлайн-версия.",
           "ProjectItemsOriginal__One__type": "Web Разработка",
-
-          "ProjectItemsOriginal__Two__name": "OV",
-          "ProjectItemsOriginal__Two__description": "Сайт каталог магазина одежды.",
-          "ProjectItemsOriginal__Two__type": "Web Разработка",
 
           "ProjectItemsOriginal__Three__name": "Business Roulette",
           "ProjectItemsOriginal__Three__description": "Социальная сеть для молниеносного поиска и установления деловых контактов.",
@@ -220,7 +206,7 @@ function App() {
   useEffect(() => {
     setScreenSizeEvent(screenSize)
   }, [screenSize])
- 
+
   useEffect(() => {
     setBlogItemsOriginal([
       {
@@ -233,44 +219,37 @@ function App() {
     ])
     setCodeItemsOriginal([
       {
-        name: t('CodeItemsOriginal__One__name'),
-        description: t('CodeItemsOriginal__One__description'),
-        technology: ["React", "TypeScript"],
-        link: "https://github.com/CyrilStrone/React-Solutions",
-        stars: "React-Solutions"
-      },
-      {
         name: t('CodeItemsOriginal__Two__name'),
         description: t('CodeItemsOriginal__Two__description'),
         technology: ["React", "TypeScript", "SASS"],
-        link: "https://github.com/CyrilStrone/CyrilStrone",
-        stars: "CyrilStrone"
+        link: "https://github.com/CyrilStrone/cyril-strone",
+        stars: "cyril-strone"
       },
       {
         name: t('CodeItemsOriginal__Three__name'),
         description: t('CodeItemsOriginal__Three__description'),
-        technology: ["React", "TypeScript"],
-        link: "https://github.com/CyrilStrone/SevenWinds_Test",
-        stars: "SevenWinds_Test"
+        technology: ["React", "TypeScript", "Axios", "Effector"],
+        link: "https://github.com/CyrilStrone/sevenwinds-test",
+        stars: "sevenwinds-test"
       },
       {
         name: t('CodeItemsOriginal__Four__name'),
         description: t('CodeItemsOriginal__Four__description'),
-        technology: ["React", "TypeScript"],
+        technology: ["React", "TypeScript", "Axios", "Effector"],
         link: "https://github.com/CyrilStrone/unischool-vite",
         stars: "unischool-vite"
       },
       {
         name: t('CodeItemsOriginal__Five__name'),
         description: t('CodeItemsOriginal__Five__description'),
-        technology: ["HTML", "CSS", "JavaScript"],
-        link: "https://github.com/CyrilStrone/My-First-Website",
-        stars: "My-First-Website"
+        technology: ["React", "TypeScript", "Axios", "Redux"],
+        link: "https://github.com/CyrilStrone/mitrasoft-test",
+        stars: "mitrasoft-test"
       },
       {
         name: t('CodeItemsOriginal__Six__name'),
         description: t('CodeItemsOriginal__Six__description'),
-        technology: ["React", "TypeScript"],
+        technology: ["React", "TypeScript", "Axios", "Effector"],
         link: "https://github.com/CyrilStrone/knight-test",
         stars: "knight-test"
       }
@@ -280,7 +259,7 @@ function App() {
         new: true,
         name: t('ProjectItemsOriginal__One__name'),
         description: t('ProjectItemsOriginal__One__description'),
-        technology: ["React", "TypeScript", "ThreeJS"],
+        technology: ["React", "TypeScript", "ThreeJS", "Effector"],
         link: "",
         type: t('ProjectItemsOriginal__One__type'),
         preview: Cepr
@@ -289,7 +268,7 @@ function App() {
         new: false,
         name: t('ProjectItemsOriginal__Four__name'),
         description: t('ProjectItemsOriginal__Four__description'),
-        technology: ["React", "TypeScript"],
+        technology: ["React", "TypeScript", "Axios", "Effector"],
         link: "",
         type: t('ProjectItemsOriginal__Four__type'),
         preview: SRMZHKH
@@ -298,26 +277,16 @@ function App() {
         new: false,
         name: t('ProjectItemsOriginal__Five__name'),
         description: t('ProjectItemsOriginal__Five__description'),
-        technology: ["React", "TypeScript"],
+        technology: ["React", "TypeScript", "Axios", "Effector"],
         link: "",
         type: t('ProjectItemsOriginal__Five__type'),
         preview: CeprDash
-      },
-
-      {
-        new: false,
-        name: t('ProjectItemsOriginal__Two__name'),
-        description: t('ProjectItemsOriginal__Two__description'),
-        technology: ["React", "TypeScript"],
-        link: "https://gamereviewer.ru/",
-        type: t('ProjectItemsOriginal__Two__type'),
-        preview: OV
       },
       {
         new: false,
         name: t('ProjectItemsOriginal__Three__name'),
         description: t('ProjectItemsOriginal__Three__description'),
-        technology: ["React", "TypeScript", "Webpack"],
+        technology: ["React", "TypeScript", "Webpack", "Axios", "Effector"],
         link: "https://businessroulette.ru/",
         type: t('ProjectItemsOriginal__Three__type'),
         preview: BR

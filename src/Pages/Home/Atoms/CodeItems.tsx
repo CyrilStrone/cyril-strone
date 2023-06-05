@@ -8,7 +8,9 @@ import CSS from "../../../Common/Icons/CSS.svg"
 import SASS from "../../../Common/Icons/SASS.svg"
 import ThreeJS from "../../../Common/Icons/ThreeJS.svg"
 import Webpack from "../../../Common/Icons/Webpack.svg"
-
+import Axios from "../../../Common/Icons/Axios.svg"
+import Effector from "../../../Common/Icons/Effector.svg"
+import Redux from "../../../Common/Icons/Redux.svg"
 import Star from "../../../Common/Icons/Star.svg"
 import { ApiGitHub, IApiGitHub } from "../../../Common/ApiGitHub"
 import { useState } from "react"
@@ -49,8 +51,11 @@ export const CodeItems = (params: ICodeItems) => {
                                             HTML : e == "CSS" ?
                                                 CSS : e == "SASS" ?
                                                     SASS : e == "ThreeJS" ?
-                                                        ThreeJS : e == "Webpack" ?
-                                                            Webpack : ""} alt="Technology" />
+                                                        ThreeJS : e == "Axios" ?
+                                                            Axios : e == "Effector" ?
+                                                                Effector : e == "Redux" ?
+                                                                    Redux : e == "Webpack" ?
+                                                                        Webpack : ""} alt="Technology" />
                     )}
                 </div>
                 <div className="CodeItems__Footer__Stars">

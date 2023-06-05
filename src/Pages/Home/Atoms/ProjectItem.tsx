@@ -8,7 +8,9 @@ import CSS from "../../../Common/Icons/CSS.svg"
 import SASS from "../../../Common/Icons/SASS.svg"
 import ThreeJS from "../../../Common/Icons/ThreeJS.svg"
 import Webpack from "../../../Common/Icons/Webpack.svg"
-
+import Axios from "../../../Common/Icons/Axios.svg"
+import Effector from "../../../Common/Icons/Effector.svg"
+import Redux from "../../../Common/Icons/Redux.svg"
 import Link from "../../../Common/Icons/Link.svg"
 import New from "../../../Common/Icons/New.svg"
 import { useStore } from "effector-react";
@@ -41,8 +43,11 @@ export const ProjectItem = (params: IProjectItem) => {
                                                     HTML : e == "CSS" ?
                                                         CSS : e == "SASS" ?
                                                             SASS : e == "ThreeJS" ?
-                                                                ThreeJS : e == "Webpack" ?
-                                                                    Webpack : ""} alt="Technology" />
+                                                                ThreeJS : e == "Axios" ?
+                                                                    Axios : e == "Effector" ?
+                                                                        Effector : e == "Redux" ?
+                                                                            Redux : e == "Webpack" ?
+                                                                                Webpack : ""} alt="Technology" />
                             )}
                         </div>
                         <img className="ProjectItem__Preview__Background" src={params.preview} alt="" />
