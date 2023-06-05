@@ -90,8 +90,11 @@ export const ProjectItem = (params: IProjectItem) => {
                                                     HTML : e == "CSS" ?
                                                         CSS : e == "SASS" ?
                                                             SASS : e == "ThreeJS" ?
-                                                                ThreeJS : e == "Webpack" ?
-                                                                    Webpack : ""} alt="Technology" />
+                                                                ThreeJS : e == "Axios" ?
+                                                                    Axios : e == "Effector" ?
+                                                                        Effector : e == "Redux" ?
+                                                                            Redux : e == "Webpack" ?
+                                                                                Webpack : ""} alt="Technology" />
                             )}
                         </div>
                         <img className="ProjectItem__Preview__Background" src={params.preview} alt="" />
