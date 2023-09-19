@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cyril-strone/static/css/main.b31192bd.css",
-    "main.js": "/cyril-strone/static/js/main.785c5fb2.js",
+    "main.js": "/cyril-strone/static/js/main.5f856a5e.js",
     "static/js/787.575cc484.chunk.js": "/cyril-strone/static/js/787.575cc484.chunk.js",
     "static/media/Cepr.png": "/cyril-strone/static/media/Cepr.269102fac2b5b0d743f6.png",
     "static/media/SRMZHKH.png": "/cyril-strone/static/media/SRMZHKH.fd56aa22ce4433779a81.png",
@@ -38,11 +38,11 @@
     "static/media/Circle2.svg": "/cyril-strone/static/media/Circle2.464b7ae28b32d441b46bffe44cb453db.svg",
     "static/media/Circle.svg": "/cyril-strone/static/media/Circle.87db585d11710b1686d75742782536ac.svg",
     "main.b31192bd.css.map": "/cyril-strone/static/css/main.b31192bd.css.map",
-    "main.785c5fb2.js.map": "/cyril-strone/static/js/main.785c5fb2.js.map",
+    "main.5f856a5e.js.map": "/cyril-strone/static/js/main.5f856a5e.js.map",
     "787.575cc484.chunk.js.map": "/cyril-strone/static/js/787.575cc484.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b31192bd.css",
-    "static/js/main.785c5fb2.js"
+    "static/js/main.5f856a5e.js"
   ]
 }
