@@ -9,7 +9,7 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-  <HashRouter>
+  <HashRouter basename='/cyril-strone'>
     <App />
   </HashRouter>,
 );
